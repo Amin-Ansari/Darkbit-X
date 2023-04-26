@@ -1,0 +1,27 @@
+.navbar-container {
+  margin-top: 1.8rem;
+}
+.navbar-style {
+  border-radius: 50px;
+  background-color: var(--semiGraybg);
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+@media all and (min-width: 576px) {
+  .navbar-style {
+    padding: 13px 30px;
+  }
+}
+@media all and (min-width: 768px) {
+  .navbar-style {
+    padding: 15px 30px;
+  }
+}
+@media all and (min-width: 992px) {
+  .navbar-style {
+    padding: 18px 30px;
+  }
+}
