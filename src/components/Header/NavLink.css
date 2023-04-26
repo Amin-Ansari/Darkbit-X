@@ -1,0 +1,18 @@
+.navbar-link-item {
+  margin: 0px 10px;
+}
+.nav-link {
+  display: inline-block;
+  width: max-content;
+  font-size: var(--navFontSize1);
+  font-weight: 600;
+}
+
+@media all and (min-width: 557px) {
+  .nav-link {
+    font-size: var(--navFontSize);
+  }
+}
+.nav-link:hover {
+  opacity: 0.5;
+}

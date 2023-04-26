@@ -1,3 +1,13 @@
 .logo-nav-list-container {
   display: flex;
 }
+.navbar-ul {
+  padding-right: 1rem;
+  display: none;
+}
+
+@media all and (min-width: 992px) {
+  .navbar-ul {
+    display: flex;
+  }
+}

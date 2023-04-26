@@ -3,7 +3,7 @@ import logoImage from "../../assets/logo & icons/logo.svg";
 import "./Logo.css";
 
 const Logo = () => {
-  return <img src={logoImage} />;
+  return <img className="logo-image" src={logoImage} />;
 };
 
 export default Logo;

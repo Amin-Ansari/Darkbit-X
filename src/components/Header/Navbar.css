@@ -3,10 +3,10 @@
 }
 .navbar-style {
   border-radius: 50px;
-  background-color: var(--semiGraybg);
+  background-color: var(--primeBgColor);
   padding: 10px 30px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: max-content max-content;
   justify-content: space-between;
 }
 

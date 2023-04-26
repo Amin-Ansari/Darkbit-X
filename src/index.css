@@ -3,13 +3,16 @@
 :root {
   --whiteColor: #ffff;
   --textColor: #a6a6b2;
-  --semiGraybg: #2b2b3b;
+  --primeBgColor: #2b2b3b;
+  --navFontSize: 18px;
+  --navFontSize1: 23px;
 }
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   list-style-type: none;
+  text-decoration: none;
 }
 body {
   font-family: "Noto Sans Arabic", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -20,6 +23,17 @@ body {
   scroll-behavior: smooth;
   background-color: #15151e;
   color: var(--whiteColor);
+  direction: rtl;
+}
+a {
+  color: var(--whiteColor);
+}
+button {
+  font-family: "Noto Sans Arabic", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #header-root {

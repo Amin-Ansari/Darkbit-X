@@ -1,0 +1,18 @@
+.cart-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--whiteColor);
+  font-size: var(--navFontSize);
+  font-weight: 600;
+  width: 125px !important;
+}
+.large-sc-cart {
+  display: none;
+}
+
+@media all and (min-width: 992px) {
+  .large-sc-cart {
+    display: block;
+  }
+}
