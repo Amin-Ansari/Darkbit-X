@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --whitecolor: #ffff;
+  --textColor: #a6a6b2;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -14,4 +18,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   background-color: #15151e;
+  color: var(--whitecolor);
 }
