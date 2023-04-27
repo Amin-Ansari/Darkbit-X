@@ -2,17 +2,26 @@
   margin: 0px 10px;
 }
 .nav-link {
-  display: inline-block;
+  display: flex;
   width: max-content;
   font-size: var(--navFontSize1);
   font-weight: 600;
+  transition: all 0.3s;
 }
 
+.angle-icon {
+  font-size: 25px;
+  height: 40px;
+  margin-right: 5px;
+}
 @media all and (min-width: 557px) {
   .nav-link {
     font-size: var(--navFontSize);
   }
 }
 .nav-link:hover {
-  opacity: 0.5;
+  opacity: 0.75;
+}
+.nav-link:hover > .nav-link {
+  background-color: red;
 }

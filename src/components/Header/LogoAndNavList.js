@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import NavLink from "./NavLink";
 import Cart from "./Cart";
+import { FiChevronDown } from "react-icons/fi";
 import "./LogoAndNavList.css";
 
 const LogoAndNavList = () => {
@@ -12,7 +13,13 @@ const LogoAndNavList = () => {
         <NavLink>خانه</NavLink>
         <NavLink>درباره ما</NavLink>
         <NavLink>بلاگ</NavLink>
-        <NavLink>منابع</NavLink>
+        <NavLink>
+          {" "}
+          منابع
+          <span className="angle-icon">
+            <FiChevronDown />
+          </span>
+        </NavLink>
       </ul>
       <Cart></Cart>
     </div>
