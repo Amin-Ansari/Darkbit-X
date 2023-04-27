@@ -21,7 +21,7 @@ const LogoAndNavList = () => {
           </span>
         </NavLink>
       </ul>
-      <Cart></Cart>
+      <Cart className=" large-sc-cart" />
     </div>
   );
 };

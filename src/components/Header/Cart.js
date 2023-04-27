@@ -4,8 +4,11 @@ import "./Cart.css";
 const Cart = (props) => {
   const basketCartRef = useRef();
   return (
-    <button type="button" className="cart-button large-sc-cart">
-      سبد خرید <span>(100)</span>
+    <button
+      type="button"
+      className={`cart-button ${props.className ? props.className : ""}`}
+    >
+      سبد خرید <span>(0)</span>
     </button>
   );
 };

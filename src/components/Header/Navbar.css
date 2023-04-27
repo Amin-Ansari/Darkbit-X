@@ -9,7 +9,12 @@
   grid-template-columns: auto auto;
   justify-content: space-between;
 }
-
+.start-button-and-cart {
+  display: flex;
+}
+.smal-sc-cart {
+  display: block;
+}
 @media all and (min-width: 576px) {
   .navbar-style {
     padding: 13px 30px;
@@ -23,5 +28,8 @@
 @media all and (min-width: 992px) {
   .navbar-style {
     padding: 18px 30px;
+  }
+  .smal-sc-cart {
+    display: none;
   }
 }

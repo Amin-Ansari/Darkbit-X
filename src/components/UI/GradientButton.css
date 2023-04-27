@@ -1,0 +1,59 @@
+.gradient-button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  width: max-content;
+  height: max-content;
+  font-weight: 600;
+  font-size: var(--navFontSize);
+  position: relative;
+  padding: 8px 0px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.gradient-button-get-start {
+  display: none;
+}
+.grad-button-text {
+  position: relative;
+  z-index: 2;
+  margin: 0px 40px;
+}
+.gradient-bg {
+  background-image: linear-gradient(
+    90deg,
+    #27a4ff,
+    #3354ff 28%,
+    #7433ff 50%,
+    #f64abb 79%,
+    #ff7c33
+  );
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: 150% 100%;
+  background-position: 90% 135%;
+  transition: all 0.3s;
+}
+.gradient-button:hover {
+  transform: scale(0.97);
+}
+
+.gradient-button:hover .gradient-bg {
+  transform: scale3d(2, 2, 1);
+}
+@media all and (min-width: 768px) {
+  .gradient-button-get-start {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) {
+  .gradient-button {
+    padding: 10px 5px;
+  }
+}

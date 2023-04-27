@@ -4,8 +4,8 @@
 .nav-link {
   display: flex;
   width: max-content;
-  font-size: var(--navFontSize1);
-  font-weight: 600;
+  font-size: var(--navFontSize);
+  font-weight: 500;
   transition: all 0.3s;
 }
 
@@ -13,6 +13,8 @@
   font-size: 25px;
   height: 40px;
   margin-right: 5px;
+  transition: all 0.3s;
+  padding-top: 1px;
 }
 @media all and (min-width: 557px) {
   .nav-link {
@@ -22,6 +24,6 @@
 .nav-link:hover {
   opacity: 0.75;
 }
-.nav-link:hover > .nav-link {
-  background-color: red;
+.nav-link:hover span {
+  transform: rotateZ(180deg);
 }

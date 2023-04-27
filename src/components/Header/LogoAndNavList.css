@@ -4,6 +4,7 @@
 .navbar-ul {
   padding-right: 1rem;
   display: none;
+  align-items: center;
 }
 
 @media all and (min-width: 992px) {
