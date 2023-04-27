@@ -8,7 +8,7 @@ const Navbar = (props) => {
     <Container className="navbar-container">
       <nav className="navbar-style">
         <LogoAndNavList />
-        <div>dd</div>
+        <div>سبد خرید</div>
       </nav>
     </Container>
   );

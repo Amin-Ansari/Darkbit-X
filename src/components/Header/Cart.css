@@ -5,10 +5,14 @@
   color: var(--whiteColor);
   font-size: var(--navFontSize);
   font-weight: 600;
-  width: 125px !important;
+  display: flex;
+  flex-flow: row nowrap;
+  width: max-content;
+  min-width: 140px;
 }
 .large-sc-cart {
   display: none;
+  margin: 0px 15px;
 }
 
 @media all and (min-width: 992px) {
