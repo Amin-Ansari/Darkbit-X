@@ -5,9 +5,8 @@
   width: max-content;
   height: max-content;
   font-weight: 600;
-  font-size: var(--navFontSize);
   position: relative;
-  padding: 6px 0px;
+  padding: 5px 0px;
   perspective: 1000px;
   transform-style: preserve-3d;
   overflow: hidden;
@@ -20,7 +19,7 @@
 .grad-button-text {
   position: relative;
   z-index: 2;
-  margin: 0px 40px;
+  margin: 0px 20px;
 }
 .gradient-bg {
   background-image: linear-gradient(
@@ -47,13 +46,46 @@
 .gradient-button:hover .gradient-bg {
   transform: scale3d(2, 2, 1);
 }
+.bars-gButton {
+  padding: 0px;
+  margin: 0px;
+  width: 39px;
+  height: 39px;
+}
+.bars {
+  width: 60%;
+  height: 2.7px;
+  border-radius: 10px !important;
+  background-color: #fff;
+  margin: 5px auto;
+}
+.bars-gButton .grad-button-text {
+  margin: 0px 0px;
+}
 @media all and (min-width: 768px) {
   .gradient-button-get-start {
     display: block;
+    font-size: var(--navFontSize1);
+  }
+  .bars-gButton {
+    margin: 0px 10px;
+    width: 45px;
+    height: 45px;
+  }
+  .bars {
+    margin: 7px auto;
+    height: 3.7px;
   }
 }
 @media all and (min-width: 992px) {
   .gradient-button {
-    padding: 7px 5px;
+    padding: 6px 5px;
+    font-size: var(--navFontSize);
+  }
+  .grad-button-text {
+    margin: 0px 30px;
+  }
+  .bars-gButton {
+    display: none;
   }
 }

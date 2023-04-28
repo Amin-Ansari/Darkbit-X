@@ -5,7 +5,7 @@
   --textColor: #a6a6b2;
   --primeBgColor: #2b2b3b;
   --navFontSize: 18px;
-  --navFontSize1: 23px;
+  --navFontSize1: 1rem;
 }
 * {
   margin: 0px;

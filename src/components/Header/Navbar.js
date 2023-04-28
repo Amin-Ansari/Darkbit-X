@@ -11,11 +11,13 @@ const Navbar = (props) => {
       <nav className="navbar-style">
         <LogoAndNavList />
         <div className="start-button-and-cart">
-          <Cart className="smal-sc-cart">
-            <span className="cart-icon-style"></span>
-          </Cart>
+          <Cart className="smal-sc-cart"></Cart>
           <GradientButton className="gradient-button-get-start">
             شروع خرید
+          </GradientButton>
+          <GradientButton className="bars-gButton">
+            <div className="bars"></div>
+            <div className="bars"></div>
           </GradientButton>
         </div>
       </nav>
