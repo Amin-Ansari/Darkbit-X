@@ -10,9 +10,10 @@ const Navbar = (props) => {
     <Container className="navbar-container">
       <nav className="navbar-style">
         <LogoAndNavList />
-
         <div className="start-button-and-cart">
-          <Cart className="smal-sc-cart" />
+          <Cart className="smal-sc-cart">
+            <span className="cart-icon-style"></span>
+          </Cart>
           <GradientButton className="gradient-button-get-start">
             شروع خرید
           </GradientButton>

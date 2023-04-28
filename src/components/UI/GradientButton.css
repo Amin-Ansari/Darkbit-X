@@ -7,7 +7,7 @@
   font-weight: 600;
   font-size: var(--navFontSize);
   position: relative;
-  padding: 8px 0px;
+  padding: 6px 0px;
   perspective: 1000px;
   transform-style: preserve-3d;
   overflow: hidden;
@@ -54,6 +54,6 @@
 }
 @media all and (min-width: 992px) {
   .gradient-button {
-    padding: 10px 5px;
+    padding: 7px 5px;
   }
 }

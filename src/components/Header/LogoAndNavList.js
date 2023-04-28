@@ -14,14 +14,13 @@ const LogoAndNavList = () => {
         <NavLink>درباره ما</NavLink>
         <NavLink>بلاگ</NavLink>
         <NavLink>
-          {" "}
           منابع
           <span className="angle-icon">
             <FiChevronDown />
           </span>
         </NavLink>
       </ul>
-      <Cart className=" large-sc-cart" />
+      <Cart className=" large-sc-cart">سبد خرید</Cart>
     </div>
   );
 };

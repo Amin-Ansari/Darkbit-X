@@ -5,19 +5,50 @@
   color: var(--whiteColor);
   font-size: var(--navFontSize);
   font-weight: 500;
-  display: flex;
   flex-flow: row nowrap;
-  width: max-content;
-  min-width: 140px;
+  width: 100%;
+  min-width: 110px;
   transition: all 0.3s;
+  align-items: center;
 }
 .large-sc-cart {
   display: none;
 }
+.smal-sc-cart {
+  display: flex;
+  width: max-content !important;
+  min-width: 80px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 40px;
+  margin-right: 25px;
+}
+.stock-icon {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  margin: 0px 8px;
+  font-size: 18px;
+}
+.stock-icon svg {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.cart-icon-style {
+  font-size: 18px;
+  font-weight: 800;
+  width: min-content;
+}
 
 @media all and (min-width: 992px) {
   .large-sc-cart {
-    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .stock-icon svg {
+    display: none;
   }
 }
 .cart-button:hover {

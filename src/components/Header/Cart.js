@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 import "./Cart.css";
 
 const Cart = (props) => {
@@ -8,7 +9,11 @@ const Cart = (props) => {
       type="button"
       className={`cart-button ${props.className ? props.className : ""}`}
     >
-      سبد خرید <span>(0)</span>
+      {props.children}{" "}
+      <span className="stock-icon">
+        (0)
+        <FaShoppingCart />
+      </span>
     </button>
   );
 };
