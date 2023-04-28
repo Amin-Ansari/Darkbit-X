@@ -66,6 +66,7 @@
   .gradient-button-get-start {
     display: block;
     font-size: var(--navFontSize1);
+    font-weight: 700;
   }
   .bars-gButton {
     margin: 0px 10px;
@@ -79,7 +80,7 @@
 }
 @media all and (min-width: 992px) {
   .gradient-button {
-    padding: 6px 5px;
+    padding: 7px 5px;
     font-size: var(--navFontSize);
   }
   .grad-button-text {
