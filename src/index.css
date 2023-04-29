@@ -14,6 +14,9 @@
   list-style-type: none;
   text-decoration: none;
 }
+html {
+  direction: rtl;
+}
 body {
   font-family: "Noto Sans Arabic", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
@@ -23,7 +26,6 @@ body {
   scroll-behavior: smooth;
   background-color: #15151e;
   color: var(--whiteColor);
-  direction: rtl;
 }
 a {
   color: var(--whiteColor);

@@ -26,7 +26,6 @@ const Navbar = (props) => {
             className={`bars-gButton ${clickedState ? "bars-clicked" : ""}`}
             onBarsClicked={clickUpdate}
           >
-            {console.log(clickedState)}
             <div className="bars"></div>
             <div className="bars"></div>
           </GradientButton>

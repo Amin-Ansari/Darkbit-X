@@ -1,5 +1,17 @@
 .header-wrapper {
-  position: absolute;
-  top: 0px;
+  position: fixed;
   left: 0px;
+  transition: all 0.3s;
+}
+.header-onShow {
+  top: 0px;
+}
+.header-onHide {
+  top: -100px;
+}
+
+@media all and (min-width: 768px) {
+  .header-onHide {
+    top: -150px;
+  }
 }
