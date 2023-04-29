@@ -12,6 +12,7 @@
   overflow: hidden;
   border-radius: 50px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .gradient-button-get-start {
   display: none;
@@ -39,12 +40,17 @@
   background-position: 90% 135%;
   transition: all 0.3s;
 }
-.gradient-button:hover {
-  transform: scale(0.97);
-}
 
-.gradient-button:hover .gradient-bg {
-  transform: scale3d(2, 2, 1);
+.bars {
+  width: 60%;
+  height: 2.7px;
+  border-radius: 10px !important;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+.bars-gButton .grad-button-text {
+  margin: 0px 0px;
 }
 .bars-gButton {
   padding: 0px;
@@ -52,16 +58,27 @@
   width: 39px;
   height: 39px;
 }
-.bars {
-  width: 60%;
-  height: 2.7px;
-  border-radius: 10px !important;
-  background-color: #fff;
-  margin: 5px auto;
+.bars-clicked div.bars:nth-child(1) {
+  transform: translate(1px, 5px) rotate(50deg);
 }
-.bars-gButton .grad-button-text {
-  margin: 0px 0px;
+.bars-clicked div.bars:nth-child(2) {
+  transform: translate(1px, -6px) rotate(-50deg);
 }
+
+.gradient-button:hover {
+  transform: scale(0.98);
+}
+
+.gradient-button:hover .gradient-bg {
+  transform: scale3d(2, 2, 1);
+}
+.bars-gButton:hover {
+  transform: scale(1);
+}
+.bars-gButton:hover .gradient-bg {
+  transform: scale3d(1, 1, 1);
+}
+
 @media all and (min-width: 768px) {
   .gradient-button-get-start {
     display: block;

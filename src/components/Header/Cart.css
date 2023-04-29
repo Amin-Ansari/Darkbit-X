@@ -10,6 +10,7 @@
   min-width: 110px;
   transition: all 0.3s;
   align-items: center;
+  cursor: pointer;
 }
 .large-sc-cart {
   display: none;
