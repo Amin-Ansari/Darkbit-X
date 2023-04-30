@@ -61,10 +61,10 @@
   height: 39px;
 }
 .bars-clicked div.bars:nth-child(1) {
-  transform: translate(1px, 5px) rotate(50deg);
+  transform: translate(-0.5px, 5.5px) rotate(50deg);
 }
 .bars-clicked div.bars:nth-child(2) {
-  transform: translate(1px, -6px) rotate(-50deg);
+  transform: translate(-0.5px, -5.5px) rotate(-50deg);
 }
 
 .gradient-button:hover {
