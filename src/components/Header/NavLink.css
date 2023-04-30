@@ -24,7 +24,7 @@ span {
     font-size: var(--navFontSize);
   }
 }
-.nav-link:hover span {
+.nav-link:hover > span {
   opacity: 0.75;
 }
 .nav-link:hover span.angle-icon {

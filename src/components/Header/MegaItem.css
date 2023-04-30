@@ -1,0 +1,23 @@
+.mega-li {
+  margin: 3px 0px;
+  flex-shrink: 0;
+}
+.mega-link {
+  display: inline-block;
+  transition: all 0.3s;
+  color: #c3c3d0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.mega-li:hover .mega-link {
+  transform: translateX(-10px);
+  color: #a4a4aa;
+}
+.vip-span {
+  background-color: #ffffff !important;
+  display: inline-block;
+  padding: 0px 12px;
+  color: black;
+  border-radius: 20px;
+  margin-right: 15px;
+}
