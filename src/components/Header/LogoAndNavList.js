@@ -4,20 +4,28 @@ import NavLink from "./NavLink";
 import Cart from "./Cart";
 import { FiChevronDown } from "react-icons/fi";
 import "./LogoAndNavList.css";
+import Megamenu from "./Megamenu";
 
 const LogoAndNavList = () => {
   return (
     <div className="logo-nav-list-container">
       <Logo />
       <ul className="navbar-ul">
-        <NavLink>خانه</NavLink>
-        <NavLink>درباره ما</NavLink>
-        <NavLink>بلاگ</NavLink>
         <NavLink>
-          منابع
+          <span>خانه</span>
+        </NavLink>
+        <NavLink>
+          <span>درباره ما</span>
+        </NavLink>
+        <NavLink>
+          <span>بلاگ</span>
+        </NavLink>
+        <NavLink className="resources">
+          <span>منابع</span>
           <span className="angle-icon">
             <FiChevronDown />
           </span>
+          <Megamenu></Megamenu>
         </NavLink>
       </ul>
       <Cart className=" large-sc-cart">سبد خرید</Cart>

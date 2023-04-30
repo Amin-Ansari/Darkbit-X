@@ -1,0 +1,25 @@
+.mega-container {
+  position: absolute;
+  top: 200px;
+  right: 30px;
+  opacity: 0;
+  animation: megaMenuAnimation 0.25s ease-out 0s 1 normal forwards;
+  display: none;
+  padding-top: 40px;
+}
+.mega-menu {
+  width: 900px;
+  height: 475px;
+  top: 200px;
+  right: 30px;
+  background: var(--primeBgColor);
+  padding: 25px 45px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 1px rgba(22, 22, 22, 0.521);
+}
+@keyframes megaMenuAnimation {
+  100% {
+    top: 65px;
+    opacity: 1;
+  }
+}

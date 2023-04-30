@@ -16,14 +16,20 @@
   transition: all 0.3s;
   padding-top: 1px;
 }
+span {
+  transition: all 0.3s;
+}
 @media all and (min-width: 557px) {
   .nav-link {
     font-size: var(--navFontSize);
   }
 }
-.nav-link:hover {
+.nav-link:hover span {
   opacity: 0.75;
 }
-.nav-link:hover span {
+.nav-link:hover span.angle-icon {
   transform: rotateZ(180deg);
+}
+li:hover a.nav-link div {
+  display: block;
 }
