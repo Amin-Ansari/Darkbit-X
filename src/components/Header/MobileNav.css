@@ -16,6 +16,12 @@
 .hide-mobile-nav {
   top: -500px;
 }
+.mobile-mega {
+  padding: 10px 0px;
+}
+.mobile-nav-link {
+  padding: 4px 0px;
+}
 
 @media all and (min-width: 992px) {
   .mobile-nav {

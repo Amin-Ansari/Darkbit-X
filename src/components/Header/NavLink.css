@@ -19,9 +19,8 @@
 span {
   transition: all 0.3s;
 }
-
-.mobile-nav-link {
-  padding: 10px 0px;
+.rotate-icon {
+  transform: rotateZ(180deg);
 }
 @media all and (min-width: 557px) {
   .nav-link {
@@ -31,7 +30,7 @@ span {
 .nav-link:hover > span {
   opacity: 0.75;
 }
-.nav-link:hover span.angle-icon {
+.resources:hover span.angle-icon {
   transform: rotateZ(180deg);
 }
 li:hover a.nav-link div {
