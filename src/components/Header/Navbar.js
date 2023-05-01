@@ -5,6 +5,7 @@ import GradientButton from "../UI/GradientButton";
 import "./Navbar.css";
 import Cart from "./Cart";
 import { useState } from "react";
+import MobileNav from "./MobileNav";
 
 const Navbar = (props) => {
   const [clickedState, updateClickedState] = useState(false);
@@ -16,6 +17,12 @@ const Navbar = (props) => {
   return (
     <Container className="navbar-container">
       <nav className="navbar-style">
+        {clickedState ? (
+          <MobileNav className="show-mobile-nav" />
+        ) : (
+          <MobileNav className="hide-mobile-nav" />
+        )}
+
         <LogoAndNavList />
         <div className="start-button-and-cart">
           <Cart className="smal-sc-cart"></Cart>

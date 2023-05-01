@@ -61,10 +61,10 @@
   height: 39px;
 }
 .bars-clicked div.bars:nth-child(1) {
-  transform: translate(-0.5px, 5.5px) rotate(50deg);
+  transform: translateY(4px) rotate(50deg);
 }
 .bars-clicked div.bars:nth-child(2) {
-  transform: translate(-0.5px, -5.5px) rotate(-50deg);
+  transform: translateY(-4px) rotate(130deg);
 }
 
 .gradient-button:hover {
@@ -83,7 +83,13 @@
 .bars-gButton:hover .gradient-bg {
   transform: scale3d(1, 1, 1);
 }
-
+.mobile-gB {
+  width: 100%;
+  padding: 8px 0px;
+  margin: 25px 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
 @media all and (min-width: 768px) {
   .gradient-button-get-start {
     display: block;
@@ -98,6 +104,12 @@
   .bars {
     margin: 7px auto;
     height: 3.7px;
+  }
+  .bars-clicked div.bars:nth-child(1) {
+    transform: translateY(6px) rotate(50deg);
+  }
+  .bars-clicked div.bars:nth-child(2) {
+    transform: translateY(-5px) rotate(130deg);
   }
 }
 @media all and (min-width: 992px) {

@@ -2,6 +2,7 @@
   position: fixed;
   left: 0px;
   transition: all 0.3s;
+  background-color: transparent;
 }
 .header-onShow {
   top: 0px;

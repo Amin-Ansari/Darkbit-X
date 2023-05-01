@@ -1,5 +1,7 @@
 .navbar-container {
-  margin-top: 1.8rem;
+  padding-top: 1.8rem;
+  position: relative;
+  background-color: #15151e;
 }
 .navbar-style {
   border-radius: 50px;
