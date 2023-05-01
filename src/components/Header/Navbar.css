@@ -1,7 +1,7 @@
 .navbar-container {
   padding-top: 1.8rem;
   position: relative;
-  background-color: #15151e;
+  background-color: var(--bgcolor);
 }
 .navbar-style {
   border-radius: 50px;

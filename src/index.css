@@ -6,6 +6,7 @@
   --primeBgColor: #2b2b3b;
   --navFontSize: 18px;
   --navFontSize1: 1rem;
+  --bgcolor: #15151e;
 }
 * {
   margin: 0px;
@@ -24,7 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  background-color: #15151e;
+  background-color: var(--bgcolor);
   color: var(--whiteColor);
 }
 a {

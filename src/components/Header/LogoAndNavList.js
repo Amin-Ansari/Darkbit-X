@@ -6,7 +6,7 @@ import { FiChevronDown } from "react-icons/fi";
 import "./LogoAndNavList.css";
 import Megamenu from "./Megamenu";
 
-const LogoAndNavList = () => {
+const LogoAndNavList = (props) => {
   return (
     <div className="logo-nav-list-container">
       <Logo />
@@ -28,7 +28,9 @@ const LogoAndNavList = () => {
           <Megamenu></Megamenu>
         </NavLink>
       </ul>
-      <Cart className=" large-sc-cart">سبد خرید</Cart>
+      <Cart className=" large-sc-cart" onShowing={props.onShowingModal}>
+        سبد خرید
+      </Cart>
     </div>
   );
 };

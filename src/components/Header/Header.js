@@ -6,7 +6,7 @@ import "./Header.css";
 let lastScrollPosition = window.scrollY;
 window.scrollTo(0, 0);
 
-const Header = () => {
+const Header = (props) => {
   const [navStatus, setNavStatus] = useState(true);
 
   const settingNavState = () => {
@@ -38,7 +38,7 @@ const Header = () => {
         navStatus ? "header-onShow" : "header-onHide"
       }`}
     >
-      <Navbar />
+      <Navbar onShowingModal={props.onShowingCart} />
     </FullWidthContainer>,
     document.getElementById("header-root")
   );

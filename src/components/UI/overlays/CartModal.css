@@ -1,0 +1,39 @@
+.cart-modal {
+  width: 480px;
+  height: 400px;
+  background-color: var(--bgcolor);
+  border-radius: 10px;
+  z-index: 1;
+}
+.modal-header {
+  padding: 0px 10px;
+  border-bottom: 2px solid #4d4d63;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-header h3 {
+  font-size: 1.1rem;
+}
+.modal-header span {
+  display: flex;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  overflow: scroll;
+}
+.modal-body p {
+  padding: 12px 0px;
+  color: var(--textColor);
+}
+.modal-body p + button {
+  font-size: 17px;
+  padding: 5px 20px;
+}
