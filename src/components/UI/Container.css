@@ -1,3 +1,7 @@
 .container {
   width: min(100%, 1270px);
 }
+.gird-container {
+  display: grid;
+  grid-template: auto / repeat(12, 1fr);
+}

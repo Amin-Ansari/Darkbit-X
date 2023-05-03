@@ -1,9 +1,22 @@
+@keyframes animation {
+  form {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .cart-modal {
   width: 480px;
   height: 400px;
   background-color: var(--bgcolor);
   border-radius: 10px;
   z-index: 1;
+  transform: scale(0.8);
+  animation: animation 0.35s ease-out 0s 1 normal forwards;
 }
 .modal-header {
   padding: 0px 10px;
