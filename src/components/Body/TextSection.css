@@ -1,0 +1,59 @@
+.context-wrapper {
+  grid-column: span 12;
+  margin-top: 8rem;
+}
+
+.context-wrapper h3 {
+  font-size: calc(1.5rem + 0.8vw);
+  line-height: 2.5rem;
+  padding: 10px 5px;
+}
+.context-wrapper p {
+  color: var(--textColor);
+  padding: 10px 1rem;
+  font-size: calc(0.9rem + 0.3vw);
+}
+.context-wrapper h3,
+.context-wrapper p {
+  text-align: center;
+  max-width: 970px;
+  margin: auto;
+}
+
+@media all and (min-width: 576px) {
+  .context-wrapper h3 {
+    padding: 1rem 3rem 5px;
+    line-height: 3.2rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .context-wrapper h3 {
+    padding: 2rem 3rem 5px;
+    font-size: calc(2rem + 0.7vw);
+    line-height: 3.8rem;
+  }
+  .context-wrapper p {
+    padding: 10px 5rem;
+    line-height: 1.8rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .context-wrapper h3 {
+    padding: 3rem 2rem 5px;
+    line-height: 4.2rem;
+    font-size: calc(2.3rem + 0.7vw);
+  }
+  .context-wrapper p {
+    color: var(--textColor);
+    padding: 10px 5rem;
+    line-height: 2.1rem;
+    font-size: calc(0.9rem + 0.2vw);
+  }
+}
+@media all and (min-width: 1200px) {
+  .context-wrapper h3 {
+    padding: 3.5rem 3rem 5px;
+    line-height: 4.3rem;
+    font-size: 2.7rem;
+  }
+}
