@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../UI/Container";
+import EmailSubmit from "./EmailSubmit";
 import "./TextSection.css";
 
 const TextSection = () => {
@@ -12,6 +13,7 @@ const TextSection = () => {
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
           ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز
         </p>
+        <EmailSubmit></EmailSubmit>
       </div>
     </Container>
   );

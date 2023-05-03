@@ -1,6 +1,7 @@
 .context-wrapper {
   grid-column: span 12;
-  margin-top: 8rem;
+  max-width: 970px;
+  margin: 8rem auto 0px;
 }
 
 .context-wrapper h3 {
@@ -16,8 +17,6 @@
 .context-wrapper h3,
 .context-wrapper p {
   text-align: center;
-  max-width: 970px;
-  margin: auto;
 }
 
 @media all and (min-width: 576px) {
