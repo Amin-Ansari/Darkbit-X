@@ -3,7 +3,7 @@ import GradientButton from "../UI/GradientButton";
 
 const EmailSubmit = () => {
   return (
-    <form className="email-form">
+    <form className="email-form no-opacity">
       <div className="submit-container">
         <GradientButton className="button-style">ثبت ایمیل</GradientButton>
         <input type="email" placeholder="ایمیل خود را وارد نمایید"></input>

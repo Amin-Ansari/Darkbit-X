@@ -7,8 +7,11 @@
   border-radius: 50px;
   background-color: var(--primeBgColor);
   opacity: 1 !important;
-  position: relative;
-  z-index: -1;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.email-form:hover {
+  background-color: #4d4d63;
 }
 .submit-container {
   display: flex;
