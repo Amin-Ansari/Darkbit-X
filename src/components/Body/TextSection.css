@@ -1,7 +1,7 @@
 .context-wrapper {
   grid-column: span 12;
   max-width: 970px;
-  margin: 8rem auto 0px;
+  margin: 10rem auto 0px;
 }
 
 .context-wrapper h3 {
@@ -11,8 +11,8 @@
 }
 .context-wrapper p {
   color: var(--textColor);
-  padding: 10px 1rem;
-  font-size: calc(0.9rem + 0.3vw);
+  padding: 0px 0.5rem 15px;
+  font-size: calc(0.75rem + 0.3vw);
 }
 .context-wrapper h3,
 .context-wrapper p {
@@ -33,7 +33,7 @@
     line-height: 3.8rem;
   }
   .context-wrapper p {
-    padding: 10px 5rem;
+    padding: 0px 1rem 15px;
     line-height: 1.8rem;
   }
 }
@@ -45,9 +45,9 @@
   }
   .context-wrapper p {
     color: var(--textColor);
-    padding: 10px 5rem;
-    line-height: 2.1rem;
-    font-size: calc(0.9rem + 0.2vw);
+    padding: 0px 5rem 15px;
+    line-height: 2rem;
+    font-size: calc(0.8rem + 0.2vw);
   }
 }
 @media all and (min-width: 1200px) {

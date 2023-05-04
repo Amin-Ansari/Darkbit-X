@@ -2,7 +2,7 @@
   width: min(100%, 600px);
   display: flex;
   justify-content: center;
-  margin: 20px auto 0px;
+  margin: 15px auto 0px;
   padding: 10px 10px;
   border-radius: 50px;
   background-color: var(--primeBgColor);
@@ -16,6 +16,7 @@
 .submit-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 .email-form input {
@@ -38,6 +39,9 @@
   font-size: calc(0.8rem + 0.5vw);
 }
 @media all and (min-width: 576px) {
+  .email-form {
+    margin: 18px auto 0px;
+  }
   .submit-container {
     display: flex;
     justify-content: space-between;
@@ -51,11 +55,20 @@
     font-family: "Noto Sans Arabic";
     opacity: 1 !important;
   }
+  .email-form input::placeholder {
+    opacity: 0.75;
+  }
   .button-style {
     width: 30%;
     padding: 5px 0px;
     font-size: calc(0.9rem + 0.3vw);
     background-color: red;
     position: static !important;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .email-form {
+    margin: 45px auto 0px;
   }
 }

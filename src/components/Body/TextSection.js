@@ -8,7 +8,7 @@ const TextSection = () => {
     <Container className="gird-container">
       <div className="context-wrapper">
         <h3 className="no-opacity">
-          راک بیت ایکس بروز ترین و فروش بورس و کریپتو کارنسی
+          دارک بیت ایکس بروز ترین پلتفرم معاملات بورس و کریپتو کارنسی
         </h3>
         <p className="no-opacity">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
