@@ -10,8 +10,8 @@
 }
 
 .cart-modal {
-  width: 480px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   background-color: var(--bgcolor);
   border-radius: 10px;
   z-index: 1;
@@ -49,4 +49,11 @@
 .modal-body p + button {
   font-size: 17px;
   padding: 5px 20px;
+}
+
+@media all and (min-width: 576px) {
+  .cart-modal {
+    width: 450px;
+    height: 400px;
+  }
 }

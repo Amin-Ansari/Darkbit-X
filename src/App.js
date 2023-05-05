@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import TextSection from "./components/Body/TextSection";
 import FullWidthContainer from "./components/UI/FullWidthContainer";
 import "./App.css";
-import MegaItem from "./components/Header/MegaItem";
+import ImageSection from "./components/Body/ImageSection";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Header />
       <FullWidthContainer>
         <TextSection />
+        <ImageSection />
       </FullWidthContainer>
     </Fragment>
   );

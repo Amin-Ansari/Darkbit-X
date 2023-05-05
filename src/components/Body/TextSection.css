@@ -33,7 +33,7 @@
     line-height: 3.8rem;
   }
   .context-wrapper p {
-    padding: 0px 1rem 15px;
+    padding: 0px 1rem 5px;
     line-height: 1.8rem;
   }
 }
@@ -45,7 +45,7 @@
   }
   .context-wrapper p {
     color: var(--textColor);
-    padding: 0px 5rem 15px;
+    padding: 0px 5rem 5px;
     line-height: 2rem;
     font-size: calc(0.8rem + 0.2vw);
   }

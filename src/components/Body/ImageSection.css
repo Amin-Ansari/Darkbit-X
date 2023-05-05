@@ -1,0 +1,27 @@
+.image-section {
+  width: 100%;
+}
+.gradient-image {
+  margin: 3.5rem 0px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.gradient-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (min-width: 576px) {
+  .image-section {
+    padding: 20px;
+  }
+}
+@media all and (min-width: 768px) {
+  .image-section {
+    padding: 45px;
+  }
+}
