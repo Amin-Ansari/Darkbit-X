@@ -3,21 +3,37 @@
 }
 .gradient-image {
   margin: 3.5rem 0px;
-  background-color: red;
   display: flex;
   justify-content: center;
-  border-radius: 50px;
-  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
 }
-.gradient-image img {
+.gradient-background {
   width: 100%;
   max-width: 100%;
   height: auto;
+  border-radius: 15px;
+}
+.image-style {
+  position: absolute;
+  width: 90%;
+  height: 98%;
+  border-radius: 20px;
+  top: 10%;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 15px;
 }
 
 @media all and (min-width: 576px) {
   .image-section {
     padding: 20px;
+  }
+  .gradient-background {
+    border-radius: 20px;
+  }
+  .image-style {
+    border-radius: 20px;
   }
 }
 @media all and (min-width: 768px) {
