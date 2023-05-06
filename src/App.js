@@ -11,6 +11,8 @@ function App() {
       <Header />
       <FullWidthContainer>
         <TextSection />
+      </FullWidthContainer>
+      <FullWidthContainer className="hide-overflow">
         <ImageSection />
       </FullWidthContainer>
     </Fragment>
