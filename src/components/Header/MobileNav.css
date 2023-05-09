@@ -12,9 +12,10 @@
 }
 .show-mobile-nav {
   top: 90px;
+  background-color: red;
 }
-.header-onShow > div.show-mobile-nav {
-  top: 150px;
+.header-onHide div.show-mobile-nav {
+  top: 90px;
 }
 .hide-mobile-nav {
   top: -500px;
@@ -26,7 +27,20 @@
   padding: 4px 0px;
 }
 
+@media all and (min-width: 576px) {
+  .header-onHide div.show-mobile-nav {
+    top: 100px;
+  }
+}
+@media all and (min-width: 768px) {
+  .header-onHide div.show-mobile-nav {
+    top: 140px;
+  }
+}
 @media all and (min-width: 992px) {
+  .header-onShow > div.show-mobile-nav {
+    top: 15000px;
+  }
   .mobile-nav {
     display: none !important;
   }
