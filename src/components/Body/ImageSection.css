@@ -8,7 +8,6 @@
   justify-content: center;
   border-radius: 20px;
   position: relative;
-  background-color: red;
   object-fit: cover;
 }
 .gradient-background {
@@ -16,6 +15,11 @@
   max-width: 100%;
   height: auto;
   border-radius: 15px;
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+.opacity-full {
+  opacity: 1;
 }
 
 .image-style {
@@ -25,10 +29,15 @@
   border-radius: 20px;
   top: 10%;
   right: 50%;
-  transform: translateX(50%);
   border-radius: 15px;
+  transition: all 0.7s ease;
+  opacity: 0;
+  transform: translate(50%, 50px);
 }
-
+.image-visible {
+  opacity: 1;
+  transform: translate(50%, 0px);
+}
 @media all and (min-width: 576px) {
   .image-section {
     width: 100%;
@@ -61,5 +70,11 @@
   .shape-3 {
     bottom: -30%;
     left: -16%;
+  }
+}
+
+@keyframes bgAnimation {
+  100% {
+    opacity: 1;
   }
 }

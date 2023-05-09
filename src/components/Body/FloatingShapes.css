@@ -9,19 +9,23 @@
   transform: translate3d(0px, -0.4136%, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg);
   transform-style: preserve-3d;
-  max-width: 36%;
+  max-width: 30%;
   position: absolute !important;
-  transition: all 0.3s;
+  transition: all 0.7s 0.2s;
+  opacity: 0;
 }
 .shape-1 {
-  right: -20%;
-  top: -10%;
+  right: -15% !important;
+  top: -17% !important;
 }
 .shape-2 {
-  top: -10%;
-  left: -20%;
+  top: 15% !important;
+  left: -15% !important;
 }
 .shape-3 {
-  bottom: -30%;
-  left: -20%;
+  bottom: -35% !important;
+  left: -15% !important;
+}
+.shape-visible {
+  opacity: 1 !important;
 }
