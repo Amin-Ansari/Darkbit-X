@@ -13,6 +13,9 @@
 .show-mobile-nav {
   top: 90px;
 }
+.header-onShow > div.show-mobile-nav {
+  top: 150px;
+}
 .hide-mobile-nav {
   top: -500px;
 }

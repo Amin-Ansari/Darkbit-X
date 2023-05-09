@@ -11,9 +11,8 @@ const Header = (props) => {
 
   const settingNavState = () => {
     const scrollPosition = window.scrollY;
-    let navHeight = document.querySelector("nav").scrollHeight;
     if (scrollPosition !== lastScrollPosition) {
-      if (scrollPosition > (navHeight + 20) / 2) {
+      if (scrollPosition > 80) {
         if (lastScrollPosition > scrollPosition) {
           setNavStatus(true);
         } else {
