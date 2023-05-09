@@ -8,16 +8,28 @@
   font-size: calc(1.5rem + 0.8vw);
   line-height: 2.5rem;
   padding: 10px 5px;
+  transition: all 0.8s 0s ease;
 }
 .context-wrapper p {
   color: var(--textColor);
   padding: 0px 0.5rem 15px;
   font-size: calc(0.75rem + 0.3vw);
+  transition: all 0.8s 0.3s ease;
 }
 .context-wrapper h3,
 .context-wrapper p {
   text-align: center;
-  transition: all 0.3s;
+  transform: translate(0);
+}
+
+.no-opacity {
+  opacity: 0;
+}
+p.no-opacity {
+  transform: translateY(50px);
+}
+h3.no-opacity {
+  transform: translateY(50px);
 }
 
 @media all and (min-width: 576px) {

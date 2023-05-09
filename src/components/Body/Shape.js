@@ -1,7 +1,7 @@
 import React from "react";
 
-const FloatingShapes = (props) => {
+const Shape = (props) => {
   return <img src={props.src} className={props.className} />;
 };
 
-export default FloatingShapes;
+export default Shape;
