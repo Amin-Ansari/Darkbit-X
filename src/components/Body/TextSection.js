@@ -1,5 +1,5 @@
 import React from "react";
-import useOnScreen from "./APIs/useOnScreen";
+import useOnScreen from "../APIs/useOnScreen";
 import Container from "../UI/Container";
 import EmailSubmit from "./EmailSubmit";
 import "./TextSection.css";

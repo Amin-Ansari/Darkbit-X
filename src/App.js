@@ -4,6 +4,7 @@ import TextSection from "./components/Body/TextSection";
 import FullWidthContainer from "./components/UI/FullWidthContainer";
 import "./App.css";
 import ImageSection from "./components/Body/ImageSection";
+import BrandBar from "./components/Body/BrandBar";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <FullWidthContainer className="hide-overflow">
         <ImageSection />
       </FullWidthContainer>
+      <BrandBar />
     </Fragment>
   );
 }

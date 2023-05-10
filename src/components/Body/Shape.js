@@ -1,5 +1,5 @@
 import React from "react";
-import useOnScreen from "./APIs/useOnScreen";
+import useOnScreen from "../APIs/useOnScreen";
 
 const Shape = (props) => {
   const [imgRef, imageVisibility] = useOnScreen({ treshold: 1.0 });
