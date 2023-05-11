@@ -68,7 +68,7 @@
     left: -17%;
   }
   .shape-3 {
-    bottom: -30%;
+    bottom: -32% !important;
     left: -16%;
   }
 }

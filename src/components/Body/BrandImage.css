@@ -2,5 +2,20 @@
   max-width: 100%;
   height: auto;
   flex-shrink: 0;
-  margin: 10px 5px;
+  margin: 10px 7px;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media all and (min-width: 768px) {
+  .brand-image {
+    height: 30px;
+    margin: 10px 15px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .brand-image {
+    margin: 10px 27px;
+  }
 }

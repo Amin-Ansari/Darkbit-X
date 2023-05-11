@@ -29,10 +29,12 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  transition: all 0.6s ease;
+  opacity: 0;
 }
 .brands-heading {
-  padding: 0.3rem 0px;
+  padding: 0.3rem 0px 1.2rem;
   font-size: calc(1rem + 0.8vw);
   color: var(--textColor);
 }
@@ -52,4 +54,8 @@
   .brands-heading {
     font-size: 1.6rem;
   }
+}
+
+.bar-visible {
+  opacity: 1;
 }
