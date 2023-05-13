@@ -13,7 +13,7 @@ const ImageSection = (props) => {
   });
 
   return (
-    <Container className>
+    <Container>
       <div className="image-section">
         <div className={`gradient-image`}>
           <img
