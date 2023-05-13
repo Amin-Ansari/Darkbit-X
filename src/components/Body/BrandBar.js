@@ -7,31 +7,39 @@ import Container from "../UI/Container";
 const BrandBar = (props) => {
   const [brandRef, isBrandvisible] = useOnScreen({ threshold: 1.0 });
   const [scrollDirection, setDirection] = useState(true);
+  const [scrollableWidth, setWidth] = useState(0);
   let leftTimer;
   let rightTimer;
   const [scrollValue, setScrollValue] = useState(0);
 
   useEffect(() => {
-    const scrollableWidth =
-      brandRef.current.clientWidth - brandRef.current.scrollWidth;
+    setWidth(brandRef.current.clientWidth - brandRef.current.scrollWidth);
 
-    leftTimer = setTimeout(() => {
-      scrollDirection
-        ? setScrollValue(scrollValue - 3)
-        : setScrollValue(scrollValue + 3);
+    leftTimer =
+      isBrandvisible &&
+      setTimeout(() => {
+        scrollDirection
+          ? setScrollValue(scrollValue - 3)
+          : setScrollValue(scrollValue + 3);
 
-      brandRef.current.scrollLeft = scrollValue;
-    }, 100);
+        brandRef.current.scrollLeft = scrollValue;
+      }, 100);
 
     return () => {
-      if (scrollValue == scrollableWidth) {
-        setDirection(false);
-      }
-      if (scrollValue >= 0) {
-        setDirection(true);
+      if (scrollableWidth != 0) {
+        if (scrollValue <= scrollableWidth) {
+          clearTimeout(leftTimer);
+          setDirection(false);
+        }
+        if (scrollValue >= 0) {
+          clearTimeout(leftTimer);
+          setDirection(true);
+        }
+      } else {
+        clearTimeout(leftTimer);
       }
     };
-  }, [scrollValue]);
+  }, [isBrandvisible, scrollValue, scrollDirection]);
 
   return (
     <FullWidthContainer className="relative-wraper">
