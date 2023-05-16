@@ -1,13 +1,16 @@
 import React from "react";
 import "./FeatureSecondSection.css";
 import ReadLink from "./ReadLink";
-const automatedImage = require("../../assets/images/automated.png");
+import { BsFileText } from "react-icons/bs";
 
 const FeatureSecondSection = (props) => {
   return (
     <div className="second-feature-section">
       <div className="feature-content">
         <div className="text-content">
+          <span className="icon">
+            <BsFileText />
+          </span>
           <h4>گزارش های اتوماتیک</h4>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با

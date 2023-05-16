@@ -1,6 +1,6 @@
 .read-more-link {
   display: flex;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.2rem;
   align-items: center;
   font-size: calc(1.2rem + 0.3vw);
 }
