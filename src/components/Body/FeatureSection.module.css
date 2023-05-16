@@ -1,0 +1,105 @@
+.feature-analytics {
+  grid-column: span 12;
+  background-color: var(--primeBgColor);
+  border-radius: 2rem;
+  margin: 1rem 0px;
+  transition: all 0.3s;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+.feature-analytics:hover {
+  transform: scale(0.98);
+  background-color: #444455;
+}
+
+.text-section,
+.image-section {
+  flex-shrink: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.text-section {
+  text-align: right;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 5px 10px;
+}
+.text-section > h4 {
+  margin: 1rem 0px;
+  font-size: calc(1.4rem + 1.2vw);
+  padding: 0px;
+}
+.text-section > p {
+  max-width: 400px;
+  font-size: calc(0.8rem + 0.5vw);
+  margin-bottom: 1rem;
+  color: var(--textColor);
+}
+.image-section img {
+  width: 100% !important;
+  max-width: 100%;
+  transition: all 0.3s;
+}
+.icon {
+  display: flex;
+  font-size: calc(3rem + 1.2vw);
+  height: min-content;
+}
+.read-more-link {
+  display: flex;
+  margin-bottom: 0.8rem;
+  align-items: center;
+  font-size: calc(1.2rem + 0.3vw);
+}
+.read-more-link span {
+  display: flex;
+  align-items: center;
+  font-size: calc(1.5rem + 0.3vw);
+  transition: all 0.3s;
+}
+.read-more-link:hover span {
+  margin-right: 8px;
+}
+@media all and (min-width: 576px) {
+  .text-section {
+    text-align: right;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 5px 10px;
+  }
+  .text-section > p {
+    line-height: 2.05rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .text-section {
+    text-align: center;
+    padding: 5px 10px;
+    align-items: center;
+  }
+  .read-more-link {
+    display: flex;
+    margin-top: 1.1rem;
+    margin-bottom: 0rem;
+    align-items: center;
+    font-size: calc(1.2rem + 0.3vw);
+  }
+  .text-section,
+  .image-section {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .icon {
+    font-size: 3.5rem;
+  }
+  .text-section > h4 {
+    margin: 1rem 0px;
+    font-size: 2.6rem;
+    padding: 0px;
+  }
+}
