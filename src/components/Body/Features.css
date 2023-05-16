@@ -3,6 +3,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
+  padding: 1.8rem 0px;
 }
 .heading-container {
   grid-column: 1/ -1;
@@ -40,11 +41,11 @@
   right: -120px;
 }
 .float-shape:nth-of-type(2) {
-  bottom: -120px;
+  bottom: -60px;
   left: -150px;
 }
 .float-shape:nth-of-type(3) {
-  bottom: 0px;
+  bottom: 30px;
   right: -120px;
   max-width: 14% !important;
 }

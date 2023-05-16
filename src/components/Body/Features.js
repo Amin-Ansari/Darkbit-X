@@ -5,6 +5,7 @@ import Shape from "./Shape";
 import "./Features.css";
 import useOnScreen from "../APIs/useOnScreen";
 import FeatureSection from "./FeatureSection";
+import FeatureSecondSection from "./FeatureSecondSection";
 const shape1 = require("../../assets/images/shape-3.png");
 const shape2 = require("../../assets/images/shape-2.png");
 const shape3 = require("../../assets/images/shape-4.png");
@@ -26,6 +27,7 @@ const Features = (props) => {
           </p>
         </div>
         <FeatureSection />
+        <FeatureSecondSection />
         <Shape src={shape1} className="float-shape" />
         <Shape src={shape2} className="float-shape" />
         <Shape src={shape3} className="float-shape" />

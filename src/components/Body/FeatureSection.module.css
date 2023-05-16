@@ -62,6 +62,7 @@
 .read-more-link:hover span {
   margin-right: 8px;
 }
+
 @media all and (min-width: 576px) {
   .text-section {
     text-align: right;

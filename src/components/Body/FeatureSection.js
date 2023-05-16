@@ -1,9 +1,8 @@
 import React from "react";
-
 import classes from "./FeatureSection.module.css";
 import { BsBarChart } from "react-icons/bs";
-import { HiArrowSmLeft } from "react-icons/hi";
 import sectionImage from "../../assets/images/Advanced analytcs.svg";
+import ReadLink from "./ReadLink";
 
 const FeatureSection = (props) => {
   return (
@@ -17,12 +16,7 @@ const FeatureSection = (props) => {
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
         </p>
-        <a href="#" className={classes["read-more-link"]}>
-          بیشتر بخوانید{" "}
-          <span>
-            <HiArrowSmLeft />
-          </span>
-        </a>
+        <ReadLink />
       </div>
       <div className={classes["image-section"]}>
         <img src={sectionImage} />

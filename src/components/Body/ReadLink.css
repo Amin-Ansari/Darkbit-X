@@ -1,0 +1,16 @@
+.read-more-link {
+  display: flex;
+  margin-bottom: 0.8rem;
+  align-items: center;
+  font-size: calc(1.2rem + 0.3vw);
+}
+
+.read-more-link span {
+  display: flex;
+  align-items: center;
+  font-size: calc(1.5rem + 0.3vw);
+  transition: all 0.3s;
+}
+.read-more-link:hover span {
+  margin-right: 8px;
+}
