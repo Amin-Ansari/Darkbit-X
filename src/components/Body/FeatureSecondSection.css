@@ -1,6 +1,7 @@
 .second-feature-section {
-  padding: 20px 0px 20px 0px;
+  padding: 30px 0px 30px 0px !important;
   grid-column: span 12;
+  height: 100%;
 }
 .feature-content {
   background: var(--primeBgColor);
@@ -8,6 +9,7 @@
   transition: all 0.3s;
   overflow: hidden;
   display: flex;
+  height: 100%;
 }
 .text-content {
   width: 100%;
@@ -18,9 +20,6 @@
   font-size: calc(2.5rem + 1.2vw);
   margin: 10px 0px;
   height: min-content;
-}
-.text-content h4 {
-  font-size: calc(1.5rem + 0.5vw);
 }
 .text-content p {
   text-align: justify;
@@ -58,11 +57,5 @@
 
   .image-content {
     display: block;
-  }
-}
-
-@media all and (min-width: 1400px) {
-  .text-content h4 {
-    font-size: 2rem;
   }
 }

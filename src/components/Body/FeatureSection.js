@@ -3,6 +3,7 @@ import classes from "./FeatureSection.module.css";
 import { BsBarChart } from "react-icons/bs";
 import sectionImage from "../../assets/images/Advanced analytcs.svg";
 import FeatureHeadingIcon from "./FeatureHeadingIcon";
+import FeatureHeading from "./FeatureHeading";
 import ReadLink from "./ReadLink";
 
 const FeatureSection = (props) => {
@@ -14,10 +15,10 @@ const FeatureSection = (props) => {
             <BsBarChart />
           </FeatureHeadingIcon>
         </sectionImage>
-        <h4>پیشرفته ترین ابزار آنالیز</h4>
+        <FeatureHeading>پیشرفته ترین ابزار آنالیز</FeatureHeading>
         <p>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
         </p>
         <ReadLink />
       </div>

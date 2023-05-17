@@ -2,6 +2,7 @@ import React from "react";
 import "./FeatureSecondSection.css";
 import ReadLink from "./ReadLink";
 import FeatureHeadingIcon from "./FeatureHeadingIcon";
+import FeatureHeading from "./FeatureHeading";
 import { BsFileText } from "react-icons/bs";
 
 const FeatureSecondSection = (props) => {
@@ -12,7 +13,7 @@ const FeatureSecondSection = (props) => {
           <FeatureHeadingIcon>
             <BsFileText />
           </FeatureHeadingIcon>
-          <h4>گزارش های اتوماتیک</h4>
+          <FeatureHeading>گزارش های اتوماتیک</FeatureHeading>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در

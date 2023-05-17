@@ -1,0 +1,15 @@
+.feature-heading {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media all and (min-width: 768px) {
+  .feature-heading {
+    font-size: calc(1.2rem + 0.6vw);
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .feature-heading {
+    font-size: 1.8rem;
+  }
+}

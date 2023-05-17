@@ -1,5 +1,6 @@
 import React from "react";
 import "./FeatureThirdSection.css";
+import FeatureHeading from "./FeatureHeading";
 import { BsGear } from "react-icons/bs";
 import ReadLink from "./ReadLink";
 
@@ -10,7 +11,7 @@ const FeatureThirdSection = (props) => {
         <span className="icon">
           <BsGear />
         </span>
-        <h4> ادغام پذیری </h4>
+        <FeatureHeading>ادغام پذیری</FeatureHeading>
         <p>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در

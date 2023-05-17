@@ -1,6 +1,8 @@
 .third-section {
-  padding: 20px 0px 20px 0px;
+  padding: 30px 10px 30px 0px !important;
   grid-column: span 12;
+  align-items: stretch;
+  height: 100%;
 }
 .icon {
   display: flex;
@@ -17,12 +19,9 @@
   overflow: hidden;
   display: flex;
   flex-flow: column;
+  height: 100%;
 }
 
-.third-section-content h4 {
-  font-size: calc(1.5rem + 0.5vw);
-  margin: 0.3rem 0px;
-}
 .third-section-content p {
   text-align: justify;
   color: var(--textColor);

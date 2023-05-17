@@ -26,15 +26,10 @@
   justify-content: center;
   padding: 30px 25px !important;
 }
-.text-section > h4 {
-  margin: 1rem 0px;
-  font-size: calc(1.4rem + 1.2vw);
-  padding: 0px;
-}
+
 .text-section > p {
   max-width: 400px;
-  font-size: calc(0.8rem + 0.5vw);
-  margin-bottom: 1rem;
+  font-size: 0.98rem;
   color: var(--textColor);
 }
 .image-section img {
@@ -50,9 +45,6 @@
     flex-flow: column nowrap;
     justify-content: center;
     padding: 5px 10px;
-  }
-  .text-section > p {
-    line-height: 2.05rem;
   }
 }
 @media all and (min-width: 992px) {
@@ -71,13 +63,5 @@
   .text-section,
   .image-section {
     width: 50%;
-  }
-}
-
-@media all and (min-width: 992px) {
-  .text-section > h4 {
-    margin: 1rem 0px;
-    font-size: 2.6rem;
-    padding: 0px;
   }
 }
