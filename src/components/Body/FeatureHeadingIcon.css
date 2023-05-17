@@ -1,0 +1,16 @@
+.icon {
+  display: flex;
+  font-size: calc(2.2rem + 1.2vw);
+  height: min-content;
+}
+
+@media all and (min-width: 576px) {
+  .icon {
+    font-size: calc(2.1rem + 1.2vw);
+  }
+}
+@media all and (min-width: 1400px) {
+  .icon {
+    font-size: 3.3rem;
+  }
+}

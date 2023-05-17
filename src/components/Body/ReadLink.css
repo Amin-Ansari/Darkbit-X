@@ -2,7 +2,7 @@
   display: flex;
   margin-bottom: 0.2rem;
   align-items: center;
-  font-size: calc(1.2rem + 0.3vw);
+  font-size: calc(0.9rem + 0.3vw);
 }
 
 .read-more-link span {
@@ -13,4 +13,13 @@
 }
 .read-more-link:hover span {
   margin-right: 8px;
+}
+
+@media all and (min-width: 768px) {
+  .read-more-link {
+    display: flex;
+    margin-bottom: 0.2rem;
+    align-items: center;
+    font-size: calc(0.8rem + 0.3vw);
+  }
 }
