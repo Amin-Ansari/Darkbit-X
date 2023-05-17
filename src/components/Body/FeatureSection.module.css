@@ -30,6 +30,7 @@
 .text-section > p {
   max-width: 400px;
   font-size: 0.98rem;
+  margin-bottom: 0.5rem;
   color: var(--textColor);
 }
 .image-section img {
@@ -44,7 +45,6 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding: 5px 10px;
   }
 }
 @media all and (min-width: 992px) {

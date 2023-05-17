@@ -2,7 +2,7 @@
   position: relative;
   height: auto;
   margin: 2rem 0px;
-  padding: 5rem 0px 10rem !important;
+  padding: 7rem 0px 7rem !important;
   text-align: center;
 }
 
@@ -40,8 +40,8 @@
   overflow: hidden;
 }
 .brands-heading {
-  padding: 0.3rem 0px 1.2rem;
-  font-size: calc(1rem + 0.8vw);
+  padding: 0.5rem 0px 2rem;
+  font-size: calc(1.3rem + 0.8vw);
   color: var(--textColor);
 }
 
