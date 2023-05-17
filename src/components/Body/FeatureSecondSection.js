@@ -1,13 +1,21 @@
 import React from "react";
 import "./FeatureSecondSection.css";
 import ReadLink from "./ReadLink";
+import useOnScreen from "../APIs/useOnScreen";
 import FeatureHeadingIcon from "./FeatureHeadingIcon";
 import FeatureHeading from "./FeatureHeading";
 import { BsFileText } from "react-icons/bs";
 
 const FeatureSecondSection = (props) => {
+  const [featureRef, isFeatureVisible] = useOnScreen({ threshold: 1.0 });
+
   return (
-    <div className="second-feature-section">
+    <div
+      className={`second-feature-section ${
+        isFeatureVisible ? "show-feature" : ""
+      }`}
+      ref={featureRef}
+    >
       <div className="feature-content">
         <div className="text-content">
           <FeatureHeadingIcon>

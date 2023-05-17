@@ -3,6 +3,8 @@
   grid-column: span 12;
   align-items: stretch;
   height: 100%;
+  opacity: 0;
+  transition: all 0.4s 0.2s;
 }
 .third-section-content {
   width: 100%;
@@ -26,6 +28,9 @@
 .third-section-content:hover {
   transform: scale(0.98);
   background-color: #444455;
+}
+.show-feature {
+  opacity: 1;
 }
 @media all and (min-width: 992px) {
   .third-section {

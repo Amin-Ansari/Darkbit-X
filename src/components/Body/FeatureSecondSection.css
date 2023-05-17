@@ -2,6 +2,8 @@
   padding: 20px 0px 20px 0px;
   grid-column: span 12;
   height: 100%;
+  transition: all 0.4s;
+  opacity: 0;
 }
 .feature-content {
   background: var(--primeBgColor);
@@ -30,12 +32,13 @@
   max-width: 100% !important;
   height: auto;
 }
-
 .feature-content:hover {
   transform: scale(0.98);
   background-color: #444455;
 }
-
+.show-feature {
+  opacity: 1;
+}
 @media all and (min-width: 992px) {
   .second-feature-section {
     padding: 20px 0px 20px 15px;

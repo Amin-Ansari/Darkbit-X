@@ -3,12 +3,20 @@ import classes from "./FeatureSection.module.css";
 import { BsBarChart } from "react-icons/bs";
 import sectionImage from "../../assets/images/Advanced analytcs.svg";
 import FeatureHeadingIcon from "./FeatureHeadingIcon";
+import useOnScreen from "../APIs/useOnScreen";
 import FeatureHeading from "./FeatureHeading";
 import ReadLink from "./ReadLink";
 
 const FeatureSection = (props) => {
+  const [featureRef, isFeatureVisible] = useOnScreen({ threshold: 1.0 });
+
   return (
-    <div className={classes["feature-analytics"]}>
+    <div
+      className={`${classes["feature-analytics"]} ${
+        isFeatureVisible ? classes["show-feature"] : ""
+      }`}
+      ref={featureRef}
+    >
       <div className={classes["text-section"]}>
         <sectionImage>
           <FeatureHeadingIcon>
