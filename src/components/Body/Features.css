@@ -42,15 +42,18 @@
 .float-shape:nth-of-type(1) {
   top: 60px;
   right: -140px;
+  transition: all 0.4s 0.2s;
 }
 .float-shape:nth-of-type(2) {
   bottom: 0px;
   left: -190px;
+  transition: all 0.4s 0.3s;
 }
 .float-shape:nth-of-type(3) {
   bottom: 10px;
   right: -160px;
   max-width: 14% !important;
+  transition: all 0.4s 0.4s;
 }
 
 .grid-container .shape-visible {

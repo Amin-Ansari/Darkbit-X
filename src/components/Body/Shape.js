@@ -2,7 +2,7 @@ import React from "react";
 import useOnScreen from "../APIs/useOnScreen";
 
 const Shape = (props) => {
-  const [imgRef, imageVisibility] = useOnScreen({ threshold: 1.0 });
+  const [imgRef, imageVisibility] = useOnScreen({ threshol: 0.3 });
 
   return (
     <img
