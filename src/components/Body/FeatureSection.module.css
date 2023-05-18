@@ -50,8 +50,8 @@
 }
 .show-feature {
   opacity: 1;
-  -moz-transition: opacity 0.3s 0.2s;
-  transition: all 0.3s 0.2s;
+  -moz-transition: opacity 0.5s 0.2s;
+  transition: all 0.5s 0.2s;
 }
 @media all and (min-width: 576px) {
   .text-section {

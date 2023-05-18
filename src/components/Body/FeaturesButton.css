@@ -1,0 +1,46 @@
+.buttons-of-features {
+  grid-column: span 12;
+  padding: 0.4rem 0px;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  opacity: 0;
+  transition: all 0.5s 0.1s;
+}
+.outline-button {
+  background-color: transparent;
+  transition: all 0.5s;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  outline: none;
+  color: #fff;
+  font-size: 1.07rem;
+}
+.outline-button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale3d(0.95, 0.99, 1);
+}
+.buttons-of-features button {
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0.5rem 0px;
+}
+.buttons-of-features button:nth-of-type(1) {
+  padding: 0.5rem 2rem;
+  font-size: 1.07rem;
+}
+
+@media all and (min-width: 768px) {
+  .buttons-of-features button {
+    flex-shrink: 0;
+    width: auto;
+    margin: 0.5rem;
+  }
+}
+.show-container {
+  opacity: 1;
+}

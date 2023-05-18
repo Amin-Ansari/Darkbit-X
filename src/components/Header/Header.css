@@ -3,7 +3,7 @@
   left: 0px;
   transition: all 0.3s;
   background-color: transparent;
-  z-index: 3;
+  z-index: 6;
 }
 .header-onShow {
   top: 0px;
