@@ -24,7 +24,7 @@ const SignUpList = (props) => {
       </li>
       <li className="sign-up-item">
         <h4>
-          <FeatureHeadingIcon>
+          <FeatureHeadingIcon className="bigger-icon">
             <DiCode />
           </FeatureHeadingIcon>
           2. ابزار های مارا نصب کنید

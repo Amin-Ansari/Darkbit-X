@@ -24,14 +24,18 @@
   font-size: calc(1.8rem + 0.8vw);
   margin: 0.4rem 0px;
 }
-.sign-up-item div.icon:nth-of-type(2) {
-  font-size: calc(4.2rem + 0.8vw);
+.bigger-icon {
+  font-size: calc(2.7rem + 0.8vw) !important;
+  margin: 0.4rem 0px;
 }
 
 @media all and (min-width: 768px) {
   .sign-up-item .icon {
     width: auto;
     margin: 0px 0rem 1.1rem 0.4rem;
+  }
+  .bigger-icon {
+    font-size: calc(2.7rem + 0.8vw) !important;
   }
 }
 @media all and (min-width: 992px) {
