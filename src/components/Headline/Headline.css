@@ -1,0 +1,24 @@
+.headline {
+  grid-column: span 12;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.headline p,
+.headline h3 {
+  width: min(100%, 900px);
+  text-align: center;
+}
+
+.headline h3 {
+  font-size: calc(1.5rem + 0.5vw);
+}
+.headline p {
+  color: var(--textColor);
+  line-height: 1.7rem;
+}
+@media all and (min-width: 1400px) {
+  .headline h3 {
+    font-size: 2rem;
+  }
+}

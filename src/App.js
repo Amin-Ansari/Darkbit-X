@@ -3,9 +3,11 @@ import Header from "./components/Header/Header";
 import TextSection from "./components/Body/TextSection";
 import Features from "./components/Body/Features";
 import FullWidthContainer from "./components/UI/FullWidthContainer";
-import "./App.css";
 import ImageSection from "./components/Body/ImageSection";
 import BrandBar from "./components/Body/BrandBar";
+import BodySection from "./components/UI/BodySection";
+import HowItWorks from "./components/Body/HowItWorks";
+import "./App.css";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
       </FullWidthContainer>
       <BrandBar />
       <Features />
+      <BodySection>
+        <HowItWorks />
+      </BodySection>
     </Fragment>
   );
 }
