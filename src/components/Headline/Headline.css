@@ -8,17 +8,24 @@
 .headline h3 {
   width: min(100%, 900px);
   text-align: center;
+  opacity: 0;
 }
 
 .headline h3 {
   font-size: calc(1.5rem + 0.5vw);
+  transition: all 0.7s;
 }
 .headline p {
   color: var(--textColor);
   line-height: 1.7rem;
+  transition: all 0.7s 0.2s;
 }
 @media all and (min-width: 1400px) {
   .headline h3 {
     font-size: 2rem;
   }
+}
+
+.show-headline {
+  opacity: 1 !important;
 }
