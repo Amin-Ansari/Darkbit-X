@@ -1,0 +1,65 @@
+.sign-up-item {
+  margin: 3rem 0px;
+}
+.sign-up-item:nth-of-type(1) {
+  margin: 0rem 0px 3rem;
+}
+.sign-up-item h4 {
+  font-size: calc(1.2rem + 0.4vw);
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.sign-up-item p {
+  color: var(--textColor);
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+  text-align: justify;
+  max-width: 900px;
+}
+.sign-up-item .icon {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  font-size: calc(1.8rem + 0.8vw);
+  margin: 0.4rem 0px;
+}
+.sign-up-item div.icon:nth-of-type(2) {
+  font-size: calc(4.2rem + 0.8vw);
+}
+
+@media all and (min-width: 768px) {
+  .sign-up-item .icon {
+    width: auto;
+    margin: 0px 0rem 1.1rem 0.4rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .sign-up-item h4 {
+    font-size: calc(1.2rem + 0.2vw);
+  }
+  .sign-up-item p {
+    font-size: 0.8rem;
+  }
+
+  .sign-up-item {
+    margin: 1.5rem 0px;
+  }
+  .sign-up-item:nth-of-type(1) {
+    margin: 0rem 0px 1.5rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .sign-up-item p {
+    font-size: 1rem;
+  }
+  .sign-up-item h4 {
+    font-size: calc(1.2rem + 0.25vw);
+  }
+  .sign-up-item {
+    margin: 2rem 0px;
+  }
+  .sign-up-item:nth-of-type(1) {
+    margin: 0rem 0px 2rem;
+  }
+}

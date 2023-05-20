@@ -4,7 +4,6 @@
   height: min-content;
   margin-bottom: 0.5rem;
 }
-
 @media all and (min-width: 576px) {
   .icon {
     font-size: calc(2rem + 1.6vw);

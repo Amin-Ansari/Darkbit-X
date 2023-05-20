@@ -6,7 +6,9 @@ import "./BodySection.css";
 const BodySection = (props) => {
   return (
     <FullWidthContainer>
-      <Container className="gird-container">{props.children}</Container>
+      <Container className="gird-container body-section-margin">
+        {props.children}
+      </Container>
     </FullWidthContainer>
   );
 };

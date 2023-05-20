@@ -1,0 +1,42 @@
+.information {
+  grid-column: span 12;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.5s;
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.image-wrapper {
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px !important;
+}
+.sign-up-image {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s !important;
+  border-radius: 10px;
+}
+@media all and (min-width: 576px) {
+  .sign-up-image {
+    border-radius: 30px;
+  }
+}
+@media all and (min-width: 992px) {
+  .information {
+    grid-column: span 6;
+    padding: 2rem;
+  }
+}
+
+.show-section {
+  opacity: 1;
+  transition: all 0.3s !important;
+}
