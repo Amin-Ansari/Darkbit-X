@@ -1,0 +1,9 @@
+.tool-container {
+  grid-column: 12;
+}
+
+@media all and (min-width: 992px) {
+  .tool-container {
+    grid-column: 6;
+  }
+}

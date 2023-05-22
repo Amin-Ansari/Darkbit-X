@@ -7,6 +7,7 @@ import ImageSection from "./components/Body/ImageSection";
 import BrandBar from "./components/Body/BrandBar";
 import BodySection from "./components/UI/BodySection";
 import HowItWorks from "./components/Body/HowItWorks";
+import AnalyticsTool from "./components/Body/AnalyticsTool";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
       <Features />
       <BodySection>
         <HowItWorks />
+      </BodySection>
+      <BodySection>
+        <AnalyticsTool />
       </BodySection>
     </Fragment>
   );
