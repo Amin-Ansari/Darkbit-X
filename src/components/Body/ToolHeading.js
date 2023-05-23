@@ -8,7 +8,7 @@ const ToolHeading = (props) => {
         <h4>{props.title}</h4>
         <p>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+          استفاده از طراحان گرافیک است
         </p>
       </div>
       <div className="header-icon-container">{props.children}</div>

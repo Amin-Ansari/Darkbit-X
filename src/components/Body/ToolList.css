@@ -1,0 +1,16 @@
+.tool-list {
+  padding: 2rem 0px;
+  font-size: 1.05rem;
+  color: var(--textColor);
+}
+.tool-list li {
+  display: flex;
+  margin-top: 1rem;
+}
+.list-icon {
+  display: flex;
+  font-size: 2rem;
+  color: #fff;
+  align-self: flex-start;
+  margin-left: 0.5rem;
+}
