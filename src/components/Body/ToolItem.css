@@ -1,8 +1,24 @@
 .tool-item {
   background-color: var(--primeBgColor);
-  padding: 1.2rem 1.5rem;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 20px;
   width: 100%;
+  overflow: hidden;
+  margin-top: 3rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.tool-context {
+  padding: 1.2rem 1.5rem;
+}
+.tool-image-wrapper {
+  width: 100%;
+}
+.tool-item img {
+  width: 100%;
+  height: 105%;
+}
+.item-appear {
+  opacity: 1;
 }
