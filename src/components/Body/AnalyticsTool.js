@@ -1,4 +1,5 @@
 import React from "react";
+import ToolSection from "./ToolSection";
 import Headline from "../Headline/Headline";
 
 const AnalyticsTool = (props) => {
@@ -10,6 +11,7 @@ const AnalyticsTool = (props) => {
         سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
         متنوع
       </Headline>
+      <ToolSection />
     </React.Fragment>
   );
 };

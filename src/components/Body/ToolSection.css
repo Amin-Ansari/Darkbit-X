@@ -1,9 +1,12 @@
 .tool-container {
-  grid-column: 12;
+  grid-column: span 12;
+  display: flex;
+  flex-flow: column;
+  padding: 1.5rem 0rem;
 }
 
 @media all and (min-width: 992px) {
   .tool-container {
-    grid-column: 6;
+    grid-column: span 6;
   }
 }

@@ -1,0 +1,40 @@
+.tool-heading {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 5.2rem;
+  border-bottom: 1px solid #ffffff77;
+}
+.heading-text-container {
+  width: 75%;
+}
+.heading-text-container h4 {
+  font-size: calc(1.3rem + 0.4vw);
+}
+.heading-text-container p {
+  color: var(--textColor);
+  line-height: 1.8rem;
+  font-size: 0.98rem;
+  text-align: justify;
+}
+.header-icon-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.heading-text-container,
+.header-icon-container {
+  height: 100%;
+}
+
+@media all and (min-width: 576px) {
+  .heading-text-container p {
+    padding-left: 1.2rem;
+  }
+}
+@media all and (min-width: 1400px) {
+  .heading-text-container h4 {
+    font-size: 1.8rem;
+  }
+}
