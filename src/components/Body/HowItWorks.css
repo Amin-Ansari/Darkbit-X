@@ -3,20 +3,20 @@
   padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  transition: all 0.5s !important;
   opacity: 0;
   height: 100%;
   display: flex;
   align-items: center;
+  transition: all 1.5s 1s;
 }
 .image-wrapper {
   border-radius: 20px;
   background-size: contain;
-  background-repeat: no-repeat !important;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 30px !important;
+  transition: all 1.5s 1s;
 }
 .sign-up-image {
   max-width: 100%;
@@ -33,9 +33,4 @@
     grid-column: span 6;
     padding: 2rem;
   }
-}
-
-.show-section {
-  opacity: 1;
-  transition: all 0.3s !important;
 }

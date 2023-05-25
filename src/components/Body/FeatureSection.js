@@ -8,14 +8,16 @@ import ReadLink from "./ReadLink";
 import sectionImage from "../../assets/images/Advanced_analytcs.svg";
 
 const FeatureSection = (props) => {
-  const [analyticsRef, isAnalyticsVisible] = useOnScreen({ threshold: 0.5 });
+  const [analyticsRef, isAnalyticsVisible] = useOnScreen({ threshold: 0.09 });
 
   return (
     <div
       ref={analyticsRef}
-      className={`${classes["feature-container"]} ${
-        isAnalyticsVisible ? classes["show-feature"] : ""
-      }`}
+      className={`${classes["feature-container"]} `}
+      style={{
+        opacity: `${isAnalyticsVisible ? 1 : 0}`,
+        transition: "all 50s 0.4s !important",
+      }}
     >
       <div className={`${classes["feature-analytics"]} `}>
         <div className={classes["text-section"]}>
