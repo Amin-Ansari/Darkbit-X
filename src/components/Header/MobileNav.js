@@ -4,10 +4,9 @@ import "./NavLink.css";
 import "./MobileNav.css";
 import { FiChevronDown } from "react-icons/fi";
 import GradientButton from "../UI/GradientButton";
-
+let test = "hello";
 const MobileNav = (props) => {
   const [submenuState, changeTheState] = useState(false);
-
   const toggleTheSubMenu = () => {
     submenuState ? changeTheState(false) : changeTheState(true);
   };

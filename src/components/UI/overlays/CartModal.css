@@ -41,7 +41,8 @@
   justify-content: center;
   align-items: center;
   height: 85%;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .modal-body p {
   padding: 12px 0px;
