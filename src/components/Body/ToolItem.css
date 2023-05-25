@@ -7,7 +7,7 @@
   overflow: hidden;
   margin-top: 3.5rem;
   opacity: 0;
-  transition: all 0.7s !important;
+  transition: all 1.5s 0.8s;
 }
 .tool-context {
   padding: 1.2rem 1.5rem;

@@ -1,6 +1,6 @@
 .feature-container {
   opacity: 0;
-  transition: all 0.5s 0.8s;
+  transition: all 1.5s 0.8s;
 }
 .feature-analytics {
   grid-column: span 12;

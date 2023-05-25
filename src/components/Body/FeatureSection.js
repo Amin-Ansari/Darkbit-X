@@ -16,7 +16,6 @@ const FeatureSection = (props) => {
       className={`${classes["feature-container"]} `}
       style={{
         opacity: `${isAnalyticsVisible ? 1 : 0}`,
-        transition: "all 50s 0.4s !important",
       }}
     >
       <div className={`${classes["feature-analytics"]} `}>

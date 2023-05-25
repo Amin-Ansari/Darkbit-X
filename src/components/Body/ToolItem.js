@@ -5,7 +5,7 @@ import useOnScreen from "../APIs/useOnScreen";
 import "./ToolItem.css";
 
 const ToolItem = (props) => {
-  const [itemRef, itemVisibility] = useOnScreen({ threshold: 0.5 });
+  const [itemRef, itemVisibility] = useOnScreen({ threshold: 0.08 });
   return (
     <div
       className={`tool-item ${itemVisibility ? "item-appear" : ""}`}
