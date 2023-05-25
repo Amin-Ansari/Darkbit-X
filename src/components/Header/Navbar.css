@@ -18,15 +18,7 @@
 .smal-sc-cart {
   display: block;
 }
-.mobile-nav-container {
-  width: 100%;
-  height: max-content;
-  transition: all 0.3s;
-  top: 80px;
-  right: 0px;
-  position: absolute;
-  overflow: hidden;
-}
+
 @media all and (min-width: 576px) {
   .navbar-style {
     padding: 13px 30px;

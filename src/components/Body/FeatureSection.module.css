@@ -1,3 +1,8 @@
+.feature-container {
+  opacity: 1;
+  transition: all 5s 0.2s !important;
+  opacity: 0;
+}
 .feature-analytics {
   grid-column: span 12;
   background-color: var(--primeBgColor);
@@ -50,8 +55,6 @@
 }
 .show-feature {
   opacity: 1;
-  -moz-transition: opacity 0.5s 0.2s;
-  transition: all 0.5s 0.2s;
 }
 @media all and (min-width: 576px) {
   .text-section {

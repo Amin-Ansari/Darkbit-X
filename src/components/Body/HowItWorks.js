@@ -8,8 +8,8 @@ import "./HowItWorks.css";
 import signUPImage from "../../assets/images/SignUp.svg";
 
 const HowItWorks = (prosp) => {
-  const [imageRef, isImageVisible] = useOnScreen({ threshold: 1.0 });
-  const [listRef, isListVisible] = useOnScreen({ threshold: 1.0 });
+  const [imageRef, isImageVisible] = useOnScreen({ threshold: 0.05 });
+  const [listRef, isListVisible] = useOnScreen({ threshold: 0.05 });
 
   return (
     <React.Fragment>
