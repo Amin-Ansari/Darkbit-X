@@ -4,17 +4,18 @@
   background-color: var(--primeBgColor);
   padding: 20px 20px 0px;
   height: auto;
-  position: absolute;
-  top: -500;
+  transform: translateY(-400px);
   z-index: -1;
   border-radius: 25px;
   transition: all 0.5s;
+  margin-bottom: 1rem;
+  transition: all 0.3s !important;
 }
 .show-mobile-nav {
-  top: 90px;
+  transform: translateY(10px);
 }
 .header-onHide div.show-mobile-nav {
-  top: 90px;
+  transform: translateY(10px);
 }
 .hide-mobile-nav {
   top: -500px;
@@ -28,12 +29,12 @@
 
 @media all and (min-width: 576px) {
   .header-onHide div.show-mobile-nav {
-    top: 100px;
+    transform: translateY(60px);
   }
 }
 @media all and (min-width: 768px) {
   .header-onHide div.show-mobile-nav {
-    top: 140px;
+    top: 150px;
   }
 }
 @media all and (min-width: 992px) {
