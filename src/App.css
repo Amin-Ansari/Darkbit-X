@@ -1,0 +1,6 @@
+.full-container-hidden {
+  overflow: hidden;
+}
+.show-overflow {
+  overflow: visible !important;
+}

@@ -5,8 +5,12 @@ import "./BodySection.css";
 
 const BodySection = (props) => {
   return (
-    <FullWidthContainer>
-      <Container className="gird-container body-section-margin">
+    <FullWidthContainer className="full-container-hidden">
+      <Container
+        className={`gird-container body-section-margin ${
+          props.className ? props.className : ""
+        }`}
+      >
         {props.children}
       </Container>
     </FullWidthContainer>

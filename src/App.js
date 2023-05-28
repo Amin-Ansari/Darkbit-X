@@ -29,7 +29,7 @@ function App() {
       <BodySection>
         <AnalyticsTool />
       </BodySection>
-      <BodySection>
+      <BodySection className="show-overflow">
         <CustomerFeedBack />
       </BodySection>
     </Fragment>

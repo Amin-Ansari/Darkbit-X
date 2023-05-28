@@ -4,6 +4,11 @@
   opacity: 0;
   transition: all 0.7s 0.2s;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  margin: 0px 0px 1.5rem;
 }
 .feedBackHeadline h4,
 .feedBackHeadline p {
@@ -32,16 +37,16 @@
   .feedBackHeadline h4,
   .feedBackHeadline p {
     margin: 0px;
+    padding: 0px 0rem 0px 1rem;
   }
 }
-@media all and (min-width: 768px) {
-  .feedBackHeadline {
-    grid-column: span 6;
-  }
-}
+
 @media all and (min-width: 992px) {
   .feedBackHeadline {
+    grid-column: span 6;
+    align-items: flex-start;
     text-align: justify;
+    margin: 0px 0px 0rem;
   }
   .customer-feed-title {
     font-size: calc(1.5rem + 0.7vw);

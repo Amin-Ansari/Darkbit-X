@@ -1,7 +1,7 @@
 .cart-wrapper {
   width: 100%;
   height: 100%;
-  padding: 0px 0.95rem;
+  padding: 0px 1.1rem;
   flex-shrink: 0;
 }
 .cart-content {
@@ -10,6 +10,7 @@
   background-color: var(--primeBgColor);
   border-radius: 1rem;
   padding: 3rem 1.5rem 2.5rem;
+  margin: 0px 0rem;
 }
 .user-quote {
   font-size: calc(1rem + 0.3vw);
@@ -43,12 +44,20 @@
 }
 @media all and (min-width: 768px) {
   .cart-wrapper {
-    width: calc(100% / 1.7);
-    padding: 0px 0.5rem;
+    width: 50%;
   }
 }
 @media all and (min-width: 992px) {
   .cart-wrapper {
     padding: 0px 1rem;
+    width: 80%;
+    max-width: 375px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .cart-wrapper {
+    padding: 0px 1rem;
+    width: 80%;
+    max-width: 420px;
   }
 }
