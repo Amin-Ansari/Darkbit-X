@@ -9,6 +9,9 @@
   justify-content: center;
   flex-flow: column nowrap;
   margin: 0px 0px 1.5rem;
+  position: relative;
+  z-index: 2;
+  background-color: #15151e;
 }
 .feedBackHeadline h4,
 .feedBackHeadline p {
