@@ -44,8 +44,8 @@ const BrandBar = (props) => {
   return (
     <FullWidthContainer className="relative-wraper">
       <Container>
-        <div className="shadow-box dark-box1"></div>
-        <div className="shadow-box dark-box2"></div>
+        <div className="shadow-box-brand dark-box1"></div>
+        <div className="shadow-box-brand dark-box2"></div>
         <h4 className="brands-heading">برند های مطرح</h4>
         <div
           className={`brand-container ${isBrandvisible ? "bar-visible" : ""}`}

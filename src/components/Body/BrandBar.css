@@ -9,7 +9,7 @@
 .relative-wraper > div.container {
   position: relative;
 }
-.shadow-box {
+.shadow-box-brand {
   width: 160px;
   height: 100%;
   position: absolute;
@@ -17,7 +17,7 @@
   z-index: 5;
 }
 .dark-box1 {
-  left: 0px;
+  left: 0px !important;
   background-image: linear-gradient(90deg, #15151e 3%, rgba(21, 21, 30, 0) 98%);
 }
 
@@ -46,7 +46,7 @@
 }
 
 @media all and (min-width: 576px) {
-  .shadow-box {
+  .shadow-box-brand {
     width: 210px;
   }
 }

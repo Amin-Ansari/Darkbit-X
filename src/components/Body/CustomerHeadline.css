@@ -12,6 +12,8 @@
   position: relative;
   z-index: 2;
   background-color: #15151e;
+  transition: all 0.8s 0.3s;
+  opacity: 0;
 }
 .hider {
   position: absolute;

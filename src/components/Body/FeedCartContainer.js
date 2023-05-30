@@ -3,12 +3,14 @@ import FeedBackCart from "./FeedBackCart";
 import "./FeedCartContainer.css";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
+import useOnScreen from "../APIs/useOnScreen";
 const avatar1 = require("../../assets/images/Avatarts/1.jpg");
 const avatar2 = require("../../assets/images/Avatarts/2.jpg");
 const avatar3 = require("../../assets/images/Avatarts/3.jpg");
-const avatar4 = require("../../assets/images/Avatarts/1.jpg");
+const avatar4 = require("../../assets/images/Avatarts/2.jpg");
 
 const FeedCartContainer = (props) => {
+  const [sliderRef, isSliderVisible] = useOnScreen({ threshold: 0.09 });
   const [rightValue, setrightValue] = useState(0);
   const [clientWidth, setWidth] = useState(0);
 
@@ -25,7 +27,10 @@ const FeedCartContainer = (props) => {
   };
 
   return (
-    <div className="cart-container">
+    <div
+      className={`cart-container ${isSliderVisible ? "show-feeds" : ""}`}
+      ref={sliderRef}
+    >
       <div className="shadow-box"></div>
       <div
         className="feed-carts"
@@ -45,7 +50,7 @@ const FeedCartContainer = (props) => {
           qoute="مدرن ترین ابزار"
         ></FeedBackCart>
         <FeedBackCart
-          imageSource={avatar2}
+          imageSource={avatar4}
           qoute="بسیا پرکاربرد"
         ></FeedBackCart>
       </div>

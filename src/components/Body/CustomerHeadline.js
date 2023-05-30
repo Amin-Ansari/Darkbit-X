@@ -4,7 +4,7 @@ import GradientButton from "../UI/GradientButton";
 import "./CustomerHeadline.css";
 
 const CustomerHeadline = (props) => {
-  const [feedBackRef, feedBackShow] = useOnScreen();
+  const [feedBackRef, feedBackShow] = useOnScreen({ threshold: 0.09 });
   return (
     <div
       className={`feedBackHeadline ${feedBackShow ? "show-feed-back" : ""}`}

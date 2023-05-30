@@ -6,9 +6,11 @@
   flex-flow: row nowrap !important;
   scroll-behavior: smooth;
   justify-content: center;
+  transition: all 0.9s 0.4s;
+  opacity: 0;
 }
 .shadow-box {
-  width: 40%;
+  width: 33%;
   height: 100%;
   background-image: linear-gradient(
     to left,
@@ -19,6 +21,7 @@
   top: 0px;
   right: 0px;
   display: none;
+  z-index: 3;
 }
 
 .feed-carts {
@@ -105,4 +108,8 @@
   .slider-button {
     margin: 0px;
   }
+}
+
+.show-feeds {
+  opacity: 1;
 }
