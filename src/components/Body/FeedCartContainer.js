@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useReducer, useEffect } from "react";
 import FeedBackCart from "./FeedBackCart";
 import "./FeedCartContainer.css";
 import GradientButton from "../UI/GradientButton";
@@ -11,16 +11,20 @@ const avatar4 = require("../../assets/images/Avatarts/1.jpg");
 
 const FeedCartContainer = (props) => {
   const [rightValue, setrightValue] = useState(0);
+  const [clientWidth, setWidth] = useState(0);
 
   const myRef = useRef();
-  const previous = () => {
-    const slideWidth = myRef.current.firstChild.clientWidth;
-    setrightValue((rightValue) => rightValue - slideWidth);
-  };
   const next = () => {
     const slideWidth = myRef.current.firstChild.clientWidth;
+    setWidth(slideWidth);
+    setrightValue((rightValue) => rightValue - slideWidth);
+  };
+  const previous = () => {
+    const slideWidth = myRef.current.firstChild.clientWidth;
+    setWidth(slideWidth);
     setrightValue((rightValue) => rightValue + slideWidth);
   };
+
   return (
     <div className="cart-container">
       <div className="shadow-box"></div>
@@ -42,15 +46,29 @@ const FeedCartContainer = (props) => {
           qoute="مدرن ترین ابزار"
         ></FeedBackCart>
         <FeedBackCart
-          imageSource={avatar4}
+          imageSource={avatar2}
           qoute="بسیا پرکاربرد"
         ></FeedBackCart>
       </div>
       <div className="button-holder">
-        <button className="slider-button" onClick={next}>
+        <button
+          className="slider-button"
+          onClick={previous}
+          style={{
+            display: `${rightValue == 0 ? "none" : "block"}`,
+          }}
+        >
           P
         </button>
-        <button className="slider-button" onClick={previous}>
+        <button
+          className="slider-button"
+          onClick={next}
+          style={{
+            display: `${
+              `-${clientWidth * 3}` == `${rightValue}` ? "none" : "block"
+            }`,
+          }}
+        >
           N
         </button>
       </div>
