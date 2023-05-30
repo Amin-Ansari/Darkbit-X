@@ -1,9 +1,8 @@
 import React, { useRef, useState, useReducer, useEffect } from "react";
 import FeedBackCart from "./FeedBackCart";
 import "./FeedCartContainer.css";
-import GradientButton from "../UI/GradientButton";
-import { TbUserExclamation } from "react-icons/tb";
-import { FaLaptopHouse } from "react-icons/fa";
+import { HiArrowLongLeft } from "react-icons/hi2";
+import { HiArrowLongRight } from "react-icons/hi2";
 const avatar1 = require("../../assets/images/Avatarts/1.jpg");
 const avatar2 = require("../../assets/images/Avatarts/2.jpg");
 const avatar3 = require("../../assets/images/Avatarts/3.jpg");
@@ -58,7 +57,9 @@ const FeedCartContainer = (props) => {
             display: `${rightValue == 0 ? "none" : "block"}`,
           }}
         >
-          P
+          <span>
+            <HiArrowLongRight />
+          </span>
         </button>
         <button
           className="slider-button"
@@ -69,7 +70,9 @@ const FeedCartContainer = (props) => {
             }`,
           }}
         >
-          N
+          <span>
+            <HiArrowLongLeft />
+          </span>
         </button>
       </div>
     </div>
