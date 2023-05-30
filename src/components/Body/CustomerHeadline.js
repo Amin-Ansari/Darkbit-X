@@ -17,6 +17,7 @@ const CustomerHeadline = (props) => {
         سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز
       </p>
       <GradientButton className="y-margin">شروع کنید</GradientButton>
+      <div className="hider"></div>
     </div>
   );
 };

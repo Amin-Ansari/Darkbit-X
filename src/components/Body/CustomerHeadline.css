@@ -13,6 +13,14 @@
   z-index: 2;
   background-color: #15151e;
 }
+.hider {
+  position: absolute;
+  top: 0px;
+  right: -100vw;
+  background-color: #15151e;
+  height: 100%;
+  width: 100vw;
+}
 .feedBackHeadline h4,
 .feedBackHeadline p {
   max-width: 550px;
