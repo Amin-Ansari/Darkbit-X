@@ -10,12 +10,13 @@
   margin: 0px auto;
 }
 .headline-wrapper > h4 {
-  font-size: calc(1.2rem + 0.4rem);
+  font-size: calc(1.2rem + 0.8vw);
   font-weight: 800;
 }
 .headline-wrapper > p {
   color: var(--textColor);
-  line-height: 2rem;
+  font-size: 0.97rem;
+  line-height: 1.9rem;
 }
 
 @media all and (min-width: 576px) {

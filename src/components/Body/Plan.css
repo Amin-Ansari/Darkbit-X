@@ -1,0 +1,55 @@
+.plan {
+  grid-column: span 12;
+  padding: 3rem 0.5rem 1rem;
+  transition: all 0.3s;
+}
+.plan-header {
+  text-align: right;
+}
+.plan-title {
+  font-size: calc(1.5rem + 0.2vw);
+}
+.plan-desc {
+  font-size: 1rem;
+  color: var(--textColor);
+  line-height: 1.6rem;
+}
+.plan-header > h5 {
+  font-size: calc(1.2rem + 0.3vw);
+}
+.plan-body {
+  background-color: var(--primeBgColor);
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+.plan-price {
+  font-size: 3.2rem;
+  border-bottom: 1.5px solid #a5a5ab;
+}
+.plan-price li {
+  color: var(--textColor);
+}
+.toman-price {
+  color: var(--textColor);
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+@media all and (min-width: 768px) {
+  .plan {
+    grid-column: span 6;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .plan {
+    grid-column: span 4;
+  }
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}

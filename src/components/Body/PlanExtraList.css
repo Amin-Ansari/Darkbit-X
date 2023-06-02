@@ -1,0 +1,14 @@
+.plan-extras-list {
+  margin-bottom: 3rem;
+}
+
+div.plan-features ul {
+  margin: 1rem 0px 3rem;
+}
+div.plan-features ul li {
+  font-size: 1.1rem !important;
+  margin-top: 0.3rem;
+}
+div.plan-features ul li span {
+  font-size: 1.2rem !important;
+}

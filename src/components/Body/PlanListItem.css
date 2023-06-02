@@ -1,0 +1,10 @@
+.plan-list-item {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+}
+.plan-list-item span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
