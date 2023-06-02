@@ -1,11 +1,13 @@
 import React from "react";
 import SectionHeadline from "../UI/SectionHeadline";
+import FloatingShapes from "./FloatingShapes";
 import Plan from "./Plan";
 import "./PricingSection.css";
 
 const PricingSection = (props) => {
   return (
-    <>
+    <div className="pricing-section">
+      <FloatingShapes />
       <SectionHeadline title="قیمت ها">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
@@ -49,7 +51,7 @@ const PricingSection = (props) => {
           ]}
         ></Plan>
       </div>
-    </>
+    </div>
   );
 };
 
