@@ -1,4 +1,5 @@
 import React from "react";
+import PlanListItem from "./PlanListItem";
 import "./PlanExtraList.css";
 
 const PlanExtraList = (props) => {
