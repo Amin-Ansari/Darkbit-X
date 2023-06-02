@@ -1,7 +1,6 @@
 .headline-wrapper {
   grid-column: span 12;
   text-align: center;
-  border: 1px solid white;
   transition: all 0.8s 0.3s;
   opacity: 0;
 }
