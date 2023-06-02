@@ -5,6 +5,7 @@ import { BiUser } from "react-icons/bi";
 import { TbDeviceAnalytics } from "react-icons/tb";
 import { AiOutlineCheck } from "react-icons/ai";
 import "./Plan.css";
+import GradientButton from "../UI/GradientButton";
 
 const FeatureItem = (props) => {
   return (
@@ -50,6 +51,11 @@ const Plan = (props) => {
               <FeatureItem keyIndex={index} itemValue={item} />
             ))}
           </PlanExtraList>
+        </div>
+        <div className="buy-button-wrapper">
+          <GradientButton className="buy-button">
+            افزودن به سبد خرید
+          </GradientButton>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 .plan {
   grid-column: span 12;
-  padding: 3rem 0.5rem 1rem;
-  transition: all 0.3s;
+  padding: 4rem 1.5rem 1rem;
+  transition: all 0.6s;
 }
 .plan-header {
   text-align: right;
@@ -21,7 +21,8 @@
   background-color: var(--primeBgColor);
   border-radius: 10px;
   padding: 1.5rem 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  transition: all 0.6s;
 }
 .plan-price {
   font-size: 3.2rem;
@@ -35,6 +36,13 @@
   font-size: 1.2rem;
   display: inline-block;
   margin-right: 5px;
+}
+.buy-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.buy-button {
+  padding: 0.8rem 5px;
 }
 
 @media all and (min-width: 768px) {
@@ -52,4 +60,7 @@
 .plan:hover {
   transform: translateY(-10px);
   cursor: pointer;
+}
+.plan:hover .plan-body {
+  background-color: #323244;
 }
