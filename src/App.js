@@ -10,6 +10,7 @@ import HowItWorks from "./components/Body/HowItWorks";
 import AnalyticsTool from "./components/Body/AnalyticsTool";
 import CustomerFeedBack from "./components/Body/CustomerFeedBack";
 import "./App.css";
+import PricingSection from "./components/Body/PricingSection";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
       </BodySection>
       <BodySection className="show-overflow">
         <CustomerFeedBack />
+      </BodySection>
+      <BodySection>
+        <PricingSection></PricingSection>
       </BodySection>
     </Fragment>
   );

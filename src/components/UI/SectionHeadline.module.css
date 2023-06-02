@@ -1,0 +1,37 @@
+.headline-wrapper {
+  grid-column: span 12;
+  text-align: center;
+  border: 1px solid white;
+  transition: all 0.8s 0.3s;
+  opacity: 0;
+}
+.headline-wrapper > h4,
+.headline-wrapper > p {
+  max-width: 570px;
+  margin: 0px auto;
+}
+.headline-wrapper > h4 {
+  font-size: calc(1.2rem + 0.4rem);
+  font-weight: 800;
+}
+.headline-wrapper > p {
+  color: var(--textColor);
+  line-height: 2rem;
+}
+
+@media all and (min-width: 576px) {
+  .headline-wrapper > h4,
+  .headline-wrapper > p {
+    max-width: 760px;
+  }
+}
+@media all and (min-width: 768px) {
+  .headline-wrapper > h4,
+  .headline-wrapper > p {
+    max-width: 880px;
+  }
+}
+
+.show-headline {
+  opacity: 1;
+}
