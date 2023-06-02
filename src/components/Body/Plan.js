@@ -5,6 +5,7 @@ import { BiUser } from "react-icons/bi";
 import { TbDeviceAnalytics } from "react-icons/tb";
 import { AiOutlineCheck } from "react-icons/ai";
 import "./Plan.css";
+import useOnScreen from "../APIs/useOnScreen";
 import GradientButton from "../UI/GradientButton";
 
 const FeatureItem = (props) => {
@@ -18,9 +19,11 @@ const FeatureItem = (props) => {
 };
 
 const Plan = (props) => {
+  const [planRef, isPlanShown] = useOnScreen({ threshold: 0.5 });
   const featureList = props.features;
+
   return (
-    <div className="plan">
+    <div className={`plan ${isPlanShown ? "show-plan" : ""}`} ref={planRef}>
       <div className="plan-header">
         <h5 className="plan-title">{props.planTitle}</h5>
         <p className="plan-desc">
