@@ -37,7 +37,7 @@ function App() {
       <BodySection>
         <PricingSection></PricingSection>
       </BodySection>
-      <BodySection>
+      <BodySection className="container-margin">
         <Footer />
       </BodySection>
     </Fragment>
