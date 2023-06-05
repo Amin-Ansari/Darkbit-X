@@ -1,0 +1,10 @@
+.footer {
+  grid-column: span 12;
+  padding: 0.8rem 1rem;
+}
+
+@media all and (min-width: 992px) {
+  .footer {
+    padding: 1.5rem 2.5rem;
+  }
+}

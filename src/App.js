@@ -11,6 +11,7 @@ import AnalyticsTool from "./components/Body/AnalyticsTool";
 import CustomerFeedBack from "./components/Body/CustomerFeedBack";
 import "./App.css";
 import PricingSection from "./components/Body/PricingSection";
+import Footer from "./components/Header/Footer/Footer";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
       </BodySection>
       <BodySection>
         <PricingSection></PricingSection>
+      </BodySection>
+      <BodySection>
+        <Footer />
       </BodySection>
     </Fragment>
   );
