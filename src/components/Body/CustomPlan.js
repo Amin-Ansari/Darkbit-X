@@ -4,11 +4,18 @@ import { TbUser } from "react-icons/tb";
 import { TbDeviceAnalytics } from "react-icons/tb";
 import { TbEye } from "react-icons/tb";
 import { TbBrandHipchat } from "react-icons/tb";
+import useOnScreen from "../APIs/useOnScreen";
 import "./CustomPlan.css";
 
 const CustomPlan = (props) => {
+  const [customPlanRef, isCustomPlanVisible] = useOnScreen();
   return (
-    <div className="custom-plan-contaner">
+    <div
+      className={`custom-plan-contaner ${
+        isCustomPlanVisible ? "show-custom-plan" : ""
+      }`}
+      ref={customPlanRef}
+    >
       <div className="custom-plan">
         <div className="context-section">
           <h4>پلن اختصاصی</h4>

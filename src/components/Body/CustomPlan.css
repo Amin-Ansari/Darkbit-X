@@ -3,15 +3,19 @@
   display: flex;
   justify-content: center;
   margin: 3rem 0px 0rem;
+  opacity: 0;
+  transition: all 0.8s 0.2s;
 }
 .custom-plan {
   padding: 1.5rem 2rem;
   max-width: 900px;
+  height: auto;
   border-radius: 20px;
   background-image: url("https://assets.website-files.com/623a72cac2795a8386c05faa/6241e785afc6cd0aca779fed_gradient-04-darkbit-template.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border: 1.5px solid #fff;
   display: flex;
   flex-flow: row wrap;
 }
@@ -19,13 +23,16 @@
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
+  flex-shrink: 0;
 }
 .context-section + div {
   width: 100%;
-  height: 100%;
+  margin-top: 2rem;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 .context-section + div a {
   display: inline-block;
@@ -53,7 +60,7 @@
   width: 100%;
 }
 .special-plan-features ul {
-  width: 80%;
+  width: 100%;
   margin-top: 2rem;
   display: flex;
   flex-flow: row wrap;
@@ -66,12 +73,15 @@
 .item-icons {
   font-size: 1.3rem !important;
 }
+
 @media all and (min-width: 768px) {
   .context-section {
     width: 60%;
   }
   .context-section + div {
     width: 40%;
+    margin-top: 0rem;
+    height: 100%;
   }
   .context-section h4 {
     font-size: 1.8rem;
@@ -80,4 +90,11 @@
     text-align: justify;
     padding-left: 2rem;
   }
+  .special-plan-features ul {
+    padding-left: 2rem;
+  }
+}
+
+.show-custom-plan {
+  opacity: 1;
 }
