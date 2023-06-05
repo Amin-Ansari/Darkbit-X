@@ -1,4 +1,5 @@
 import React from "react";
+import EmailSubmit from "../../Body/EmailSubmit";
 import "./FooterNavAndSubscription.css";
 
 const FooterNavAndSubscription = (props) => {
@@ -14,8 +15,22 @@ const FooterNavAndSubscription = (props) => {
           ))}
         </ul>
       </nav>
-      <div>
-        <div></div>
+      <div className="subscription-section">
+        <div>
+          <h5 className="subscription-title">عضویت در خبرنامه</h5>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با از
+            طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+          </p>
+          <form className="subscription-form">
+            <input
+              type={"email"}
+              className="email-input"
+              placeholder="ایمیل خود رو وارد نمایید"
+            ></input>
+            <button type={"button"}>عضویت</button>
+          </form>
+        </div>
       </div>
     </div>
   );
