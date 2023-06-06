@@ -9,20 +9,33 @@ import MobileNav from "./MobileNav";
 
 const Navbar = (props) => {
   const [clickedState, updateClickedState] = useState(false);
+  const [naviGator, setNav] = useState(false);
 
   const clickUpdate = () => {
-    clickedState ? updateClickedState(false) : updateClickedState(true);
+    if (naviGator) {
+      setTimeout(() => {
+        setNav(false);
+      }, 800);
+    } else {
+      setNav(true);
+    }
+
+    if (!clickedState) {
+      setTimeout(() => {
+        updateClickedState(true);
+      }, 100);
+    } else {
+      updateClickedState(false);
+    }
   };
 
   return (
     <Container className="navbar-container">
       <nav className="navbar-style">
-        {clickedState ? (
-          <MobileNav className="show-mobile-nav" />
-        ) : (
-          <MobileNav className="hide-mobile-nav" />
-        )}
-
+        <MobileNav
+          className={`${clickedState ? "show-mobile-nav" : ""}`}
+          mobileNavContainer={naviGator}
+        />
         <LogoAndNavList />
         <div className="start-button-and-cart">
           <Cart className="smal-sc-cart"></Cart>

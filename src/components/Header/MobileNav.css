@@ -6,6 +6,10 @@
   right: 0px;
   position: absolute;
   overflow: hidden;
+  display: none;
+}
+.show-nav-container {
+  display: block;
 }
 .mobile-nav {
   width: 100%;

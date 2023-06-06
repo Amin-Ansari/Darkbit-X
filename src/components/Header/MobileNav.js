@@ -12,7 +12,11 @@ const MobileNav = (props) => {
   };
 
   return (
-    <div className="mobile-nav-container">
+    <div
+      className={`mobile-nav-container ${
+        props.mobileNavContainer ? "show-nav-container" : ""
+      }`}
+    >
       <div className={`mobile-nav ${props.className}`}>
         <ul>
           <NavLink className="mobile-nav-link">
