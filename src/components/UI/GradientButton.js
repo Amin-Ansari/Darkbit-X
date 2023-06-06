@@ -5,7 +5,7 @@ const GradientButton = (props) => {
   return (
     <button
       className={`gradient-button ${props.className ? props.className : ""}`}
-      onClick={props.onBarsClicked}
+      onClick={props.onBarsClicked || props.eventfnt}
     >
       <div className="gradient-bg"></div>
       <div className="grad-button-text">{props.children}</div>

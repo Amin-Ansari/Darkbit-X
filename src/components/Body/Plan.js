@@ -6,6 +6,8 @@ import { TbDeviceAnalytics } from "react-icons/tb";
 import { AiOutlineCheck } from "react-icons/ai";
 import "./Plan.css";
 import useOnScreen from "../APIs/useOnScreen";
+import CartContext from "../Context/CartContext";
+import { useContext } from "react";
 import GradientButton from "../UI/GradientButton";
 
 const FeatureItem = (props) => {
@@ -21,6 +23,14 @@ const FeatureItem = (props) => {
 const Plan = (props) => {
   const [planRef, isPlanShown] = useOnScreen({ threshold: 0.5 });
   const featureList = props.features;
+  const planInfo = {
+    title: props.planTitle,
+    price: props.price,
+  };
+  const ctx = useContext(CartContext);
+  const addingPlan = () => {
+    ctx.add(planInfo);
+  };
 
   return (
     <div className={`plan ${isPlanShown ? "show-plan" : ""}`} ref={planRef}>
@@ -56,7 +66,7 @@ const Plan = (props) => {
           </PlanExtraList>
         </div>
         <div className="buy-button-wrapper">
-          <GradientButton className="buy-button">
+          <GradientButton className="buy-button" eventfnt={addingPlan}>
             افزودن به سبد خرید
           </GradientButton>
         </div>

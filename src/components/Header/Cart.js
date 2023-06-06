@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import CarModal from "../UI/overlays/CartModal";
+import CartContext from "../Context/CartContext";
 import Modal from "../UI/overlays/Modal";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./Cart.css";
 
 const Cart = (props) => {
+  const ctx = useContext(CartContext);
   const [cartState, updateCartState] = useState(false);
 
   const setCartToTrue = () => {
@@ -28,7 +30,7 @@ const Cart = (props) => {
       >
         {props.children}{" "}
         <span className="stock-icon">
-          (0)
+          ({ctx.plansList.length})
           <FaShoppingCart />
         </span>
       </button>

@@ -11,7 +11,7 @@ import AnalyticsTool from "./components/Body/AnalyticsTool";
 import CustomerFeedBack from "./components/Body/CustomerFeedBack";
 import "./App.css";
 import PricingSection from "./components/Body/PricingSection";
-import Footer from "./components/Header/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
