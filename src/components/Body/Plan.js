@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PlanExtraList from "./PlanExtraList";
 import PlanListItem from "./PlanListItem";
 import { BiUser } from "react-icons/bi";
@@ -22,6 +22,7 @@ const FeatureItem = (props) => {
 
 const Plan = (props) => {
   const [planRef, isPlanShown] = useOnScreen({ threshold: 0.5 });
+  const [quantitiy, setQuantity] = useState(false);
   const featureList = props.features;
   const planInfo = {
     title: props.planTitle,
@@ -29,7 +30,17 @@ const Plan = (props) => {
   };
   const ctx = useContext(CartContext);
   const addingPlan = () => {
-    ctx.add(planInfo);
+    let exestingItem = null;
+    for (let item of ctx.plansList) {
+      if (planInfo.title === item.title) {
+        exestingItem = item;
+        setQuantity(true);
+        setTimeout(() => {
+          setQuantity(false);
+        }, 5000);
+      }
+    }
+    if (exestingItem === null) ctx.add(planInfo);
   };
 
   return (
@@ -69,6 +80,13 @@ const Plan = (props) => {
           <GradientButton className="buy-button" eventfnt={addingPlan}>
             افزودن به سبد خرید
           </GradientButton>
+
+          <p
+            className="quantity-message"
+            style={{ opacity: `${quantitiy ? "1" : "0"}` }}
+          >
+            شما قبلا این پلن را انتخاب کرده اید{" "}
+          </p>
         </div>
       </div>
     </div>

@@ -39,7 +39,7 @@ const PricingSection = (props) => {
           ]}
         ></Plan>
         <Plan
-          planTitle="ساده"
+          planTitle="حرفه ای"
           price="1,100,000"
           userNumber="75"
           hours="5,000"

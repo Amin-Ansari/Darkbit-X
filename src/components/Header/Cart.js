@@ -9,6 +9,11 @@ import "./Cart.css";
 const Cart = (props) => {
   const ctx = useContext(CartContext);
   const [cartState, updateCartState] = useState(false);
+  useEffect(() => {
+    if (cartState == false && ctx.plansList.length === 1) {
+      updateCartState(true);
+    }
+  }, [ctx.plansList]);
 
   const setCartToTrue = () => {
     updateCartState(true);

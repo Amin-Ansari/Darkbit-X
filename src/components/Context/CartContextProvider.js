@@ -1,21 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import CartContext from "./CartContext";
 import { useReducer } from "react";
 
 const contextReducerFnt = (state, action) => {
   let plans = { ...state };
-  console.log(plans);
   let exestingList = plans.plansList;
 
   if (action.type === "ADD") {
-    if (exestingList.length) {
-      alert("not empty");
-      console.log(plans);
-    } else {
-      alert("empty");
-      const list = [action.newPlan];
-      plans = { plansList: list };
-    }
+    exestingList = exestingList.concat([action.newPlan]);
+    plans = { plansList: exestingList };
   }
   if (action.type === "REMOVE") {
     plans.plansList.splice(action.planIndex, 1);
