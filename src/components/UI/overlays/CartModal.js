@@ -12,6 +12,14 @@ const CarModal = (props) => {
     plansArray = plansArray.map((item, index) => <li key={index}>{item}</li>);
     return plansArray;
   };
+  const calculateTotalPrice = () => {
+    let totalPrice = 0;
+    for (let item of cartCtx.plansList) {
+      totalPrice = Number(item.price.split(",").join("")) + totalPrice;
+    }
+
+    return totalPrice;
+  };
   const contextPlacer = () => {
     const plansInCart = cartCtx.plansList;
     if (!cartCtx.plansList.length) {
@@ -29,7 +37,7 @@ const CarModal = (props) => {
               {plansInCart.map((item, index) => (
                 <li key={index} className="plan-item-inCart">
                   <div>
-                    <h5>{item.title}</h5>
+                    <h5 className="plan-title-cart">{item.title}</h5>
                     <p>
                       قیمت: <span className="price-cart">{item.price}</span>
                       <span className="toman-cart">تومان</span>
@@ -42,7 +50,13 @@ const CarModal = (props) => {
               ))}
             </ul>
           </div>
-          <div className="total-price-container"></div>
+          <div className="total-price-container">
+            <div className="total-section">
+              جمع کل:{" "}
+              <p className="total-price-cart">{calculateTotalPrice()}</p>
+            </div>
+            <GradientButton>تسویه حساب</GradientButton>
+          </div>
         </div>
       );
     }

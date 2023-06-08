@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 85%;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -58,7 +58,7 @@
 }
 .added-plans-container {
   width: 100%;
-  height: 65%;
+  height: 80%;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0px 1rem;
@@ -66,13 +66,19 @@
 .total-price-container {
   width: 100%;
   overflow: hidden;
-  background-color: white;
-  height: 35%;
+  height: 20%;
+  border-top: 2px solid #4d4d63;
+  text-align: center;
+  padding: 0px 1rem;
+}
+.total-price-container > button {
+  width: 100% !important;
+  margin-top: 0.3rem;
 }
 .plan-item-inCart {
   display: flex;
-  padding: 1.2rem 0rem;
-  border-bottom: 1px solid #fff;
+  padding: 1.1rem 0rem;
+  border-bottom: 2px solid #4d4d63;
 }
 .plan-item-inCart div:nth-child(1),
 .plan-item-inCart div:nth-child(2) {
@@ -99,11 +105,26 @@
   color: #fff;
   margin-left: 0.2rem;
 }
-
+.plan-title-cart {
+  font-size: 1.3rem;
+  line-height: 1rem;
+}
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.total-price-cart {
+  font-size: 1rem;
+  color: #fff !important;
+  font-weight: 500;
+}
 @media all and (min-width: 576px) {
   .cart-modal {
     width: 450px;
-    height: 400px;
+    height: min(100%, 500px) !important;
   }
   .added-plans-container {
     width: 100%;
@@ -111,6 +132,7 @@
   }
   .total-price-container {
     height: 30%;
+    border: 1px solid #fff;
   }
   .plan-item-inCart:nth-last-of-type(1) {
     border-bottom: none;
