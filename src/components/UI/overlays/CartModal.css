@@ -132,7 +132,6 @@
   }
   .total-price-container {
     height: 30%;
-    border: 1px solid #fff;
   }
   .plan-item-inCart:nth-last-of-type(1) {
     border-bottom: none;

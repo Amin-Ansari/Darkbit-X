@@ -1,24 +1,36 @@
 import React, { useContext } from "react";
 import "./CartModal.css";
 import GradientButton from "../GradientButton";
+import PlanRemoveButton from "./PlanRemoveButton";
 import CartContext from "../../Context/CartContext";
 import { FiX } from "react-icons/fi";
 
 const CarModal = (props) => {
   const cartCtx = useContext(CartContext);
 
-  const plansCartList = () => {
-    let plansArray = cartCtx.plansList;
-    plansArray = plansArray.map((item, index) => <li key={index}>{item}</li>);
-    return plansArray;
-  };
   const calculateTotalPrice = () => {
     let totalPrice = 0;
     for (let item of cartCtx.plansList) {
       totalPrice = Number(item.price.split(",").join("")) + totalPrice;
     }
-
     return totalPrice;
+  };
+  const putCollons = () => {
+    const arraiedPrice = String(calculateTotalPrice()).split("");
+    let collinedPrice = [];
+    do {
+      if (arraiedPrice.length >= 2) {
+        let portion = arraiedPrice.splice(arraiedPrice.length - 1, 3);
+        collinedPrice.push(portion);
+        portion = "";
+      } else {
+        let portion = arraiedPrice.splice(arraiedPrice.length - 1, 2);
+        collinedPrice.push(portion);
+        portion = "";
+      }
+    } while (arraiedPrice.length > 0);
+
+    return collinedPrice.reverse().join(",");
   };
   const contextPlacer = () => {
     const plansInCart = cartCtx.plansList;
@@ -44,7 +56,7 @@ const CarModal = (props) => {
                     </p>
                   </div>
                   <div>
-                    <button>حذف</button>
+                    <PlanRemoveButton keyIndex={index}>حذف</PlanRemoveButton>
                   </div>
                 </li>
               ))}
@@ -52,8 +64,7 @@ const CarModal = (props) => {
           </div>
           <div className="total-price-container">
             <div className="total-section">
-              جمع کل:{" "}
-              <p className="total-price-cart">{calculateTotalPrice()}</p>
+              جمع کل: <p className="total-price-cart">{putCollons()}</p>
             </div>
             <GradientButton>تسویه حساب</GradientButton>
           </div>
