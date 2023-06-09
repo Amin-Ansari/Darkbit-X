@@ -17,20 +17,23 @@ const CarModal = (props) => {
   };
   const putCollons = () => {
     const arraiedPrice = String(calculateTotalPrice()).split("");
-    let collinedPrice = [];
+    let firstPhaseArray = [];
+    const collinedPrice = [];
+
     do {
       if (arraiedPrice.length >= 2) {
-        let portion = arraiedPrice.splice(arraiedPrice.length - 1, 3);
-        collinedPrice.push(portion);
-        portion = "";
+        firstPhaseArray = arraiedPrice.splice(-3, 3);
+        firstPhaseArray = firstPhaseArray.join("");
+        collinedPrice.unshift(firstPhaseArray);
+        firstPhaseArray = [];
       } else {
-        let portion = arraiedPrice.splice(arraiedPrice.length - 1, 2);
-        collinedPrice.push(portion);
-        portion = "";
+        firstPhaseArray = arraiedPrice.splice(-3, 2);
+        firstPhaseArray = firstPhaseArray.join("");
+        collinedPrice.unshift(firstPhaseArray);
+        firstPhaseArray = [];
       }
     } while (arraiedPrice.length > 0);
-
-    return collinedPrice.reverse().join(",");
+    return collinedPrice.join(",");
   };
   const contextPlacer = () => {
     const plansInCart = cartCtx.plansList;
@@ -64,7 +67,11 @@ const CarModal = (props) => {
           </div>
           <div className="total-price-container">
             <div className="total-section">
-              جمع کل: <p className="total-price-cart">{putCollons()}</p>
+              جمع کل:{" "}
+              <p className="total-price-cart">
+                {putCollons()}
+                <span className="total-toman">تومان</span>
+              </p>
             </div>
             <GradientButton>تسویه حساب</GradientButton>
           </div>
