@@ -35,3 +35,7 @@
     margin-top: 3rem;
   }
 }
+.copy-right-link {
+  text-decoration: underline;
+  font-weight: bold;
+}

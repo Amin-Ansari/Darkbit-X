@@ -8,7 +8,16 @@ import "./CopyRightSection.css";
 const CopyRightSection = (props) => {
   return (
     <div className="copy-right-section">
-      <p>تمامی حقوق این وبسایت متعلق به امین انصاری می باشد</p>
+      <p>
+        این یک پروژه تمرینی، تکمیل شده توسط{" "}
+        <a
+          href="https://www.linkedin.com/in/ansariii-amin/"
+          class="copy-right-link"
+        >
+          امین انصاری
+        </a>{" "}
+        میباشد
+      </p>
       <ul>
         <li>
           <a href="#">
